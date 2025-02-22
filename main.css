@@ -10,11 +10,14 @@
         --Navfont: "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", monospace;
         --Background: #FFFFFF;
         --Primarycolor: #007BFF;
-        --Secondarycolor: #6C757D;
+        --Secondarycolor: #212529;
         --Accentcolor: #28A745;
+        --Highlightcolor:  #d3d3d3;
         --Textcolor: #212529;
-        --Anchorfilter: brightness(10%);
-        --Socialbar0: opacity(20%);
+        --Secondarytextcolor: #6C757D;
+        --Anchorfilter: opacity(40%);
+        --Socialbar0: opacity(50%);
+        --Socialcard: opacity(40%);
 }
 
 
@@ -25,9 +28,12 @@
         --Primarycolor: #BB86FC;
         --Secondarycolor: #03DAC6;
         --Accentcolor: #CF6679;
+        --Highlightcolor:  #6fa2a2;
         --Textcolor: #E0E0E0;
+        --Secondarytextcolor: #03DAC6;
         --Anchorfilter: brightness(10%);
         --Socialbar0: opacity(20%);
+        --Socialcard: opacity(40%);
     }
 }
 
@@ -67,7 +73,7 @@ nav ul{
 }
 
 nav .Navwords{
-    color: var(--Background);
+    color: var(--Textcolor);
     margin-left: clamp(140px, 3vw, 180px);
     margin-right: clamp(140px, 3vw, 180px);
     
@@ -79,7 +85,7 @@ nav .Navname{
 }
 
 nav .Navanchors{
-    color: var(--Background);
+    color: var(--Textcolor);
     font-size: 1.4rem;
     text-decoration: none;
 }
@@ -108,7 +114,7 @@ nav:hover ol, nav:focus-within ol{
 }
 
 nav ol a:hover, a:focus{
-    filter: opacity(10%);
+    filter: var(--Socialbar0);
 }
 
 @keyframes open1{
@@ -135,16 +141,15 @@ nav ol a:hover, a:focus{
     .Socialcard .article{
         border: 2px solid var(--Secondarycolor);
         border-radius: 12px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 20px 30px 30px 20px;
     }
 
     .Socialcard .SCheader{
         display: flex;
         justify-content: center;
-        gap: 150px;
-        padding-top: 10px;
+        gap: 400px;
         
+        color: var(--Textcolor);
         
     }
     .Socialcard .SCheader .SCheaderD{
@@ -160,6 +165,9 @@ nav ol a:hover, a:focus{
         padding-top: 14px;
         padding-right: 10px;
     }
+    .Socialcard .SCheader .SCheaderul a:hover, a:focus{
+        filter: var(--Socialcard);
+    }
     .Socialcard .SCheader .SCheaderul img{
         height: 32px;
         width: 32px;
@@ -167,10 +175,55 @@ nav ol a:hover, a:focus{
 
     .Socialcard .SCbody{
         list-style: none;
+        font-size: 1.5rem;
+    }
+    .Socialcard .SCbody a{
+        list-style: none;
+        text-decoration: none;
+        color: var(--Secondarytextcolor);
     }
 
+    
+    .SCLitem1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--Secondarycolor);
+        border-radius: 10px;
+        width: 160px;
+        height: 40px;
+        text-decoration: none;
+        color: var(--Textcolor);
+        margin-right: 20px;
+     }
+ 
+     .SCLitem1:hover, .SCLitem1:focus{
+        background-color: var(--Highlightcolor);
+     }
+
+     .SCLitem2{
+         padding-right: 12px;
+         font-size: 1.3rem;
+         
+     }
+ 
+     .SCLitem3{
+         height: 24px;
+         width: 24px;
+     }
+ 
+     .resumetab{
+         display: flex;
+         justify-content: space-between;
+     }
+ 
+
     .Socialcard .SCfooter{
+        padding-top: 20px;
         list-style: none;
+        font-size: 1.5rem;
+        line-height: 30px;
+        color: var(--Textcolor);
     }
     
 }
