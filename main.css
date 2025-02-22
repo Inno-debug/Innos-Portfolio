@@ -1,3 +1,130 @@
+/*|||| Utility*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+        --Navfont: "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", monospace;
+        --Background: #FFFFFF;
+        --Primarycolor: #007BFF;
+        --Secondarycolor: #6C757D;
+        --Accentcolor: #28A745;
+        --Textcolor: #212529;
+        --Anchorfilter: brightness(10%);
+        --Socialbar0: opacity(20%);
+}
+
+
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --Background: #121212;
+        --Primarycolor: #BB86FC;
+        --Secondarycolor: #03DAC6;
+        --Accentcolor: #CF6679;
+        --Textcolor: #E0E0E0;
+        --Anchorfilter: brightness(10%);
+        --Socialbar0: opacity(20%);
+    }
+}
+
 html {
-    font-family: "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", monospace;
+    font-family: var(--Navfont);
+}
+
+/*|||| Biggest Size*/
+
+@media screen and (min-width: 1000px)
+{
+
+html{
+    background-color: var(--Background);
+}
+
+/*|||| Header*/
+
+nav{
+    width: 100%;
+    font-size: 1.4rem;
+    
+    display: fixed;
+}
+
+    /*Main Navigation Bar*/
+
+nav ul{
+    background-color: var(--Primarycolor);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: clamp(80px, 2vw, 110px);
+    gap: 4rem;
+    list-style: none;
+    padding-right: clamp(10px, 8vw, 170px);
+}
+
+nav .Navwords{
+    color: var(--Background);
+    margin-left: clamp(140px, 3vw, 180px);
+    margin-right: clamp(140px, 3vw, 180px);
+    
+}
+
+nav .Navname{
+    font-weight: bolder;
+   font-size: 1.5rem;
+}
+
+nav .Navanchors{
+    color: var(--Background);
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+nav .Navanchors:hover, .Navanchors:focus{
+    filter: var(--Anchorfilter);
+}
+
+    /*Social Navigation Bar*/
+
+nav ol{
+    animation: open1 .5s ease-in-out forwards;
+    background-color: var(--Secondarycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    gap: 2rem;
+    padding-top: 6px;
+    display: none;
+}
+
+nav:hover ol, nav:focus-within ol{
+    display: flex;
+}
+
+nav ol a:hover, a:focus{
+    filter: opacity(10%);
+}
+
+@keyframes open1{
+    0%{
+        transform: scaleY(0);
+    }
+    80%{
+        transform: scaleY(1.2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+
+}
+
+    /*Social Card*/
+
 }
