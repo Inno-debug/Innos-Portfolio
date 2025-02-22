@@ -30,7 +30,7 @@
         --Accentcolor: #CF6679;
         --Highlightcolor:  #6fa2a2;
         --Textcolor: #E0E0E0;
-        --Secondarytextcolor: #03DAC6;
+        --Secondarytextcolor: #E0E0E0;
         --Anchorfilter: brightness(10%);
         --Socialbar0: opacity(20%);
         --Socialcard: opacity(40%);
@@ -193,12 +193,12 @@ nav ol a:hover, a:focus{
         width: 160px;
         height: 40px;
         text-decoration: none;
-        color: var(--Textcolor);
+        color: var(--Secondarytextcolor);
         margin-right: 20px;
      }
  
      .SCLitem1:hover, .SCLitem1:focus{
-        background-color: var(--Highlightcolor);
+        background-color: var(--Secondarycolor);
      }
 
      .SCLitem2{
@@ -226,4 +226,90 @@ nav ol a:hover, a:focus{
         color: var(--Textcolor);
     }
     
+    /*Skills section*/
+    #skills{
+        display: flex;
+        justify-content: center;
+    }
+    .skills1{
+        
+        width: 1265px;
+        padding: 20px 30px 30px 20px;
+    }
+    .skills-header-section{
+        margin-top: 50px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .skills-header2{
+        font-size: 3rem;
+    }
+
+    .skills-main-section{
+        font-size: 1.5rem;
+    }
+
+    .skills-main-ul{
+        display: flex;
+        justify-content: start;
+        list-style: none;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .skills-main-ul li{
+        border: 2px solid var(--Secondarycolor);
+        border-radius: 8px;
+        color: var(--Secondarytextcolor);
+    }
+
+    .skills-html{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 50px;
+    }
+    .skills-html-img{
+        
+        width: 32px;
+        height: 32px;
+    }
+    .skills-html-p{
+        font-size: 2rem;
+        
+    }
+    .skills-css{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 50px;
+    }
+    .skills-css-img{
+        
+        width: 32px;
+        height: 32px;
+    }
+    .skills-css-p{
+        font-size: 2rem;
+        
+    }
+    .skills-javascript{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 50px;
+    }
+    .skills-javascript-img{
+        
+        width: 32px;
+        height: 32px;
+    }
+    .skills-javascript-p{
+        font-size: 2rem;
+        
+    }
 }
