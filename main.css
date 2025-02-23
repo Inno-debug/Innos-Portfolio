@@ -148,6 +148,8 @@ nav ol a:hover, a:focus{
         border-radius: 12px;
         padding: 10px 30px 10px 20px;
         width: var(--Universalwidth);
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     }
 
     .Socialcard .SCheader{
@@ -319,110 +321,90 @@ nav ol a:hover, a:focus{
 
     /*Education and Work Section*/
 
-    .work{
+    .educationworkarticle{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
-    .outereducationworkbar{
+    .educationworkcontainer{
         width: var(--Universalwidth);
-        border: 2px solid lightpink;
-        min-height: 100px;
+        border: 2px solid rgb(255, 0, 0);
+    }
+
+    .educationworklabels{
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        color: var(--Textcolor);
-        font-size: 1.2rem;
+        list-style: none;
+        
     }
 
-    .outereducationworkbar input{
-        display: block;
+    .educationh2{
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+    .workh2{
+        text-align: center;
         cursor: pointer;
     }
 
-    .workeducationcontainer{
-        width: var(--Universalwidth);
-        border: 2px solid lightskyblue;
-        height: 420px;
+    .educationh2:hover h2{
+        background-color: #28A745;
     }
 
-    .workeducationcontainer::before{
-        content: '';
-        width: 2px;
-        height: 417px;
-        background-color: var(--Textcolor);
-        position: absolute;
-        left: 0;
-        left:27.65%;
-        z-index: -1;
+    .workh2:hover h2{
+        background-color: #BB86FC;
     }
 
-    .subway{
-        display: flex;
-        justify-content: start;
-        padding-left: 20px;
-        padding-top: 20px;
-        gap: 40px;
+    .educationinput{
+        display: none;
     }
 
-    .definesubway{
-        color: var(--Textcolor);
-        font-size: 1.2rem;
-        line-height: 30px;
+    .workinput{
+        display: none;
     }
 
-    .subwaylogo{
-        padding-left: 20px;
-        margin-top: 15px;
-        z-index: 5;
+    .educationinput:checked ~ .purdue{
+        min-height: 500px;
+        padding: 10px 10px 20px;
+    }
+
+    .workinput:checked ~ .subway{
+        min-height: 500px;
+        padding: 10px 10px 20px;
+        position: relative;
+        right: 100%;
+        margin-left: 8.7px;
+        
     }
 
     .purdue{
-        display: flex;
-        justify-content: start;
-        padding-left: 20px;
-        padding-top: 20px;
-        gap: 20px;
+        border: 2px solid blue;
+        max-height: 0;
+        overflow: hidden;
+        
     }
 
-    .definepurdue{
-        color: var(--Textcolor);
-        font-size: 1.2rem;
-        line-height: 30px;
-    }
-    
-    .purduelogo{
-        height: 100px;
-        width: 80px;
-        z-index: 5;
-    }
     .highschool{
-        display: flex;
-        justify-content: start;
-        padding-left: 20px;
-        padding-top: 20px;
-        gap: 40px;
+        border: 2px solid blueviolet;
+        max-height: 0;
+        overflow: hidden;
     }
 
-    .definehighschool{
-        color: var(--Textcolor);
-        font-size: 1.2rem;
-        line-height: 30px;
+    .subway{
+        border: 2px solid green;
+        max-height: 0;
+        overflow: hidden;
+        
     }
-    
-    .highschoollogo{
-        padding-left: 20px;
-        margin-top: 20px;
-        z-index: 5;
-    }
+
 
     /*Projects*/
 
    
 
-    .projects{
+    /* .projects{
         display: flex;
         justify-content: center;
     }
@@ -430,6 +412,6 @@ nav ol a:hover, a:focus{
     .projectscontainer{  
         border: 2px solid #03DAC6;
         width: var(--Universalwidth);
-    }
+    } */
 
 }
