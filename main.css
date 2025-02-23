@@ -317,6 +317,109 @@ nav ol a:hover, a:focus{
         font-size: 2rem;
     }
 
+    /*Education and Work Section*/
 
-   
+    .work{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outereducationworkbar{
+        width: var(--Universalwidth);
+        border: 2px solid lightpink;
+        min-height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: var(--Textcolor);
+        font-size: 1.2rem;
+    }
+
+    .outereducationworkbar input{
+        display: block;
+        cursor: pointer;
+    }
+
+    .workeducationcontainer{
+        width: var(--Universalwidth);
+        border: 2px solid lightskyblue;
+        height: 420px;
+    }
+
+    .workeducationcontainer::before{
+        content: '';
+        width: 2px;
+        height: 417px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        left:27.65%;
+        z-index: -1;
+    }
+
+    .subway{
+        display: flex;
+        justify-content: start;
+        padding-left: 20px;
+        padding-top: 20px;
+        gap: 40px;
+    }
+
+    .definesubway{
+        color: var(--Textcolor);
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+
+    .subwaylogo{
+        padding-left: 20px;
+        margin-top: 15px;
+        z-index: 5;
+    }
+
+    .purdue{
+        display: flex;
+        justify-content: start;
+        padding-left: 20px;
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    .definepurdue{
+        color: var(--Textcolor);
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    
+    .purduelogo{
+        height: 100px;
+        width: 80px;
+        z-index: 5;
+    }
+    .highschool{
+        display: flex;
+        justify-content: start;
+        padding-left: 20px;
+        padding-top: 20px;
+        gap: 40px;
+    }
+
+    .definehighschool{
+        color: var(--Textcolor);
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    
+    .highschoollogo{
+        padding-left: 20px;
+        margin-top: 20px;
+        z-index: 5;
+    }
+
+    /*Projects*/
+
+        
+
 }
