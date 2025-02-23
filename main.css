@@ -236,6 +236,7 @@ nav ol a:hover, a:focus{
     #skills{
         display: flex;
         justify-content: center;
+        margin-bottom: 50px;
     }
     .skills1{
         
@@ -514,14 +515,39 @@ nav ol a:hover, a:focus{
 
    
 
-    /* .projects{
+     .projects{
+        margin-top: 150px;
         display: flex;
         justify-content: center;
     }
 
     .projectscontainer{  
         border: 2px solid #03DAC6;
-        width: var(--Universalwidth);
-    } */
+        width: 1059px;
+        border-radius: 12px;
+    } 
+
+    .projectsheader{
+        font-size: 2rem;
+    }
+
+    .projectsgroup1{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .portfolioProject{
+        border: 2px solid black;
+        width: 45%;
+        border-radius: 12px;
+    }
+
+    .minijam{
+        border: 2px solid black;
+        width: 45%;
+        border-radius: 12px;
+    }
 
 }
