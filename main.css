@@ -431,17 +431,39 @@ nav ol a:hover, a:focus{
     }
 
     .purdueimg{
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 110px;
         position: relative;
         bottom: 25px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .purduedef{
         color: var(--Textcolor);
         margin-top: 20px;
+        line-height: 25px
     }
+
+
+    .purdueP1{
+        font-size: 1.2rem;
+        color: var(--Secondarytextcolor);
+    }
+
+    .purdueh3{
+        font-size: 1.5rem;
+        color: var(--Textcolor);
+    }
+
+    .purdueP2{
+        font-size: 1.2rem;
+        color: var(--Secondarytextcolor);
+    }
+
+    .purdueP2 span{
+        text-wrap: nowrap;
+    }
+
 
     .subway{
         
@@ -449,15 +471,15 @@ nav ol a:hover, a:focus{
         overflow: hidden;
         min-width: 530px;
         display: flex;
-        gap: 20px;
+        gap: 35px;
         
     }
 
     .subwayimg{
-        height: 80px;
-        width: 80px;
-        margin-left: 25px;
-        margin-top: 20px;
+        height: 65px;
+        width: 65px;
+        margin-left: 10px;
+        margin-top: 30px;
     }
 
     .subwaydef{
@@ -465,6 +487,26 @@ nav ol a:hover, a:focus{
         display: flex;
         flex-direction: column; 
         margin-top: 20px;
+    }
+
+    .subwayP1{
+        font-size: 1.2rem;
+        color: var(--Secondarytextcolor);
+    }
+
+    .subwayh3{
+        font-size: 1.5rem;
+        color: var(--Textcolor);
+    }
+
+    .subwayP2{
+        font-size: 1.2rem;
+        color: var(--Secondarytextcolor);
+    }
+
+    .subwayP3{
+        font-size: 1.2rem;
+        color: var(--Textcolor);
     }
 
 
