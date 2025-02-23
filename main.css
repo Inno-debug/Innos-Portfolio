@@ -147,7 +147,7 @@ nav ol a:hover, a:focus{
         border: 2px solid var(--Secondarycolor);
         border-radius: 12px;
         padding: 10px 30px 10px 20px;
-        width: var(--Universalwidth);
+        width: 1059px;
         box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                     -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     }
@@ -239,8 +239,8 @@ nav ol a:hover, a:focus{
     }
     .skills1{
         
-        width: var(--Universalwidth);
-        padding: 20px 30px 30px 20px;
+        width: 1059px;
+        padding: 20px 30px 30px 0px;
     }
     .skills-header-section{
         margin-top: 50px;
@@ -251,10 +251,6 @@ nav ol a:hover, a:focus{
     .skills-header2{
         font-size: 3rem;
         color: var(--Textcolor);
-    }
-
-    .skills-main-section{
-        font-size: 1.5rem;
     }
 
     .skills-main-ul{
@@ -275,48 +271,48 @@ nav ol a:hover, a:focus{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 120px;
-        height: 50px;
+        width: 85px;
+        height: 30px;
     }
     .skills-html-img{
         
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
     }
     .skills-html-p{
-        font-size: 2rem;
+        font-size: 1.5rem;
         
     }
     .skills-css{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 50px;
+        width: 70px;
+        height: 30px;
     }
     .skills-css-img{
         
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
     }
     .skills-css-p{
-        font-size: 2rem;
+        font-size: 1.5rem;
         
     }
     .skills-javascript{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 230px;
-        height: 50px;
+        width: 165px;
+        height: 30px;
     }
     .skills-javascript-img{
         
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
     }
     .skills-javascript-p{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     /*Education and Work Section*/
@@ -326,36 +322,71 @@ nav ol a:hover, a:focus{
         justify-content: center;
     }
 
-    .educationworkcontainer{
-        width: var(--Universalwidth);
-        border: 2px solid rgb(255, 0, 0);
-    }
 
     .educationworklabels{
         display: flex;
         justify-content: space-around;
         list-style: none;
-        
+        width: var(--Universalwidth);
+  
+        padding-left: 100px;
+    }
+
+    .educationworklabels::after{
+        content: '';
+        border: 2px solid var(--Secondarycolor);
+        min-width: 1059px;
+        position: relative;
+        right: 1064px;
+        top: 55px;
+        border-radius: 15px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     }
 
     .educationh2{
         text-align: center;
         cursor: pointer;
+        
+    }
 
+    .eduh2contain{
+        background-color: var(--Secondarycolor);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .worh2contain{
+        background-color: var(--Secondarycolor);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .educh2{
+        border-top: 10px solid var(--Secondarycolor);
+        border-left: 10px solid var(--Secondarycolor);
+        border-bottom: 10px solid var(--Secondarycolor);
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        color: white;
+    }
+
+    .worh2{
+        border-top: 10px solid var(--Secondarycolor);
+        border-right: 10px solid var(--Secondarycolor);
+        border-bottom: 10px solid var(--Secondarycolor);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: white;
     }
 
     .workh2{
+       
         text-align: center;
         cursor: pointer;
     }
 
-    .educationh2:hover h2{
-        background-color: #28A745;
-    }
-
-    .workh2:hover h2{
-        background-color: #BB86FC;
-    }
+    
 
     .educationinput{
         display: none;
@@ -366,37 +397,74 @@ nav ol a:hover, a:focus{
     }
 
     .educationinput:checked ~ .purdue{
-        min-height: 500px;
+        min-height: 300px;
         padding: 10px 10px 20px;
+    }
+
+    .educationinput:checked ~ .educationh2  .educh2{
+        background-color: var(--Primarycolor);
+        border-radius: 20px;
+        
+    }
+
+    .workinput:checked ~ .workh2 .worh2{
+        background-color: var(--Primarycolor);
+        border-radius: 20px;
     }
 
     .workinput:checked ~ .subway{
-        min-height: 500px;
+        min-height: 300px;
         padding: 10px 10px 20px;
         position: relative;
         right: 100%;
-        margin-left: 8.7px;
-        
+      
     }
 
     .purdue{
-        border: 2px solid blue;
+        
         max-height: 0;
         overflow: hidden;
+        display: flex;
+        gap: 20px;
+        min-width: 537px;
         
     }
 
-    .highschool{
-        border: 2px solid blueviolet;
-        max-height: 0;
-        overflow: hidden;
+    .purdueimg{
+        height: 150px;
+        width: 150px;
+        position: relative;
+        bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .purduedef{
+        color: var(--Textcolor);
+        margin-top: 20px;
     }
 
     .subway{
-        border: 2px solid green;
+        
         max-height: 0;
         overflow: hidden;
+        min-width: 530px;
+        display: flex;
+        gap: 20px;
         
+    }
+
+    .subwayimg{
+        height: 80px;
+        width: 80px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+
+    .subwaydef{
+        color: var(--Textcolor);
+        display: flex;
+        flex-direction: column; 
+        margin-top: 20px;
     }
 
 
