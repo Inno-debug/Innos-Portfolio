@@ -352,7 +352,7 @@ nav ol a:hover, a:focus{
         content: '';
         width: 2px;
         height: 417px;
-        background-color: white;
+        background-color: var(--Textcolor);
         position: absolute;
         left: 0;
         left:27.65%;
@@ -420,6 +420,16 @@ nav ol a:hover, a:focus{
 
     /*Projects*/
 
-        
+   
+
+    .projects{
+        display: flex;
+        justify-content: center;
+    }
+
+    .projectscontainer{  
+        border: 2px solid #03DAC6;
+        width: var(--Universalwidth);
+    }
 
 }
