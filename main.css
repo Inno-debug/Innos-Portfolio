@@ -61,6 +61,7 @@ nav{
     width: 100%;
     font-size: 1.4rem;
     position: fixed;
+    z-index: 100;
 }
 
     /*Main Navigation Bar*/
@@ -266,6 +267,8 @@ nav ol a:hover, a:focus{
         border: 2px solid var(--Secondarycolor);
         border-radius: 8px;
         color: var(--Secondarytextcolor);
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     }
 
     .skills-html{
@@ -304,7 +307,7 @@ nav ol a:hover, a:focus{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 165px;
+        width: 110px;
         height: 30px;
     }
     .skills-javascript-img{
@@ -516,7 +519,7 @@ nav ol a:hover, a:focus{
    
 
      .projects{
-        margin-top: 150px;
+        margin-top: 120px;
         display: flex;
         justify-content: center;
     }
@@ -532,7 +535,7 @@ nav ol a:hover, a:focus{
     }
 
     .projectsgroup1{
-        margin-top: 50px;
+        margin-top: 60px;
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -547,6 +550,8 @@ nav ol a:hover, a:focus{
         display: flex;
         flex-direction: column;
         align-items: center;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     }
 
     .portfolioimgcontainer{
@@ -584,7 +589,7 @@ nav ol a:hover, a:focus{
         margin-top: 20px;
         list-style: none;
         display: flex;
-        
+        gap: 5px;
     }
 
     .portfoliotechnologies li{
@@ -592,6 +597,8 @@ nav ol a:hover, a:focus{
         border-radius: 6px;
         display: flex;
         justify-content: center;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     }
 
     .portfolioprojecthtml{
@@ -599,6 +606,9 @@ nav ol a:hover, a:focus{
     }
     .portfolioprojectcss{
         width: 35px;
+    }
+    .portfolioprojectgithub{
+        width: 65px;
     }
 
     .portfoliosourcecode{
@@ -612,11 +622,14 @@ nav ol a:hover, a:focus{
         text-decoration: none;
         color: var(--Secondarytextcolor);
         border-radius: 6px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     }
 
     .portfoliosourcecodeimg{
         width: 24px;
         height: 24px;
+        margin-top: 1.1px;
     }
 
     /*Minijam*/
@@ -627,5 +640,96 @@ nav ol a:hover, a:focus{
         border-radius: 12px;
     }
 
+    .minijamgithub{
+        width: 65px;
+    }
+    .minijamcsharp{
+        width: 25px;
+    }
+
+    /*Video Section*/
+
+    .Video{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+       
+    }
+
+    .videocontainer{
+        width: 1059px;
+        
+    }
+
+    .minijamvideoheader{
+        font-size: 3rem;
+    }
+
+    .videocontainercontainer{
+        border: 2px solid black;
+        border-radius: 12px;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .minijamvideo{
+        width: 900px;
+        height: 600px;
+        border-radius: 12px;
+    }
+
+    /*Recent Posts*/
+
+    .recentposts{
+        display: flex;
+        justify-content: center;
+    }
+
+    .recentpostscontainer{
+        width: 1059px;
+    }
+
+    .recentpostsheader{
+        font-size: 3rem;
+        margin-top: 70px;
+    }
+
+    .recentposts1{
+        text-decoration: none;
+        color: var(--Textcolor);
+        margin-top: 70px;
+        border: 2px solid black;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        min-height: 150px;
+    }
+
+
+    .recentposts1container{
+        padding: 20px;
+        width: 85%;
+    }
+
+    .recentpostsh3{
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .recentpostscontent{
+        font-size: 1.2rem;
+    }
+
+    .recentpostsdate{
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }   
+
+    /*Footer*/
 
 }
