@@ -14,7 +14,7 @@
 :root{
         
         --Background: #FFFFFF;
-        --Primarycolor: #4DB6AC;
+        --Primarycolor: #1976D2;
         --Secondarycolor: #CED0CE;
         --Accentcolor: #E6E8E6;
         --Textcolor: #191919;
@@ -29,10 +29,11 @@
 @media (prefers-color-scheme: dark){
     :root{
         --Background: #121212;
-        --Primarycolor: #BB86FC;
-        --Secondarycolor: #03DAC6;
-        --Accentcolor: #CF6679;
+        --Primarycolor: #1E88E5;
+        --Secondarycolor: #64B5F6;
+        --Accentcolor: #363f44;
         --Textcolor: #E0E0E0;
+        --Secondarytextcolor: #B0B0B0;   
         --Anchorfilter: brightness(10%);
         --Socialbar0: opacity(20%);
         --Socialcard: opacity(40%);
@@ -101,7 +102,7 @@ nav .Navanchors:hover, .Navanchors:focus{
 
 nav ol{
     animation: open1 .5s ease-in-out forwards;
-    background-color: var(--Secondarycolor);
+    background-color: var(--Textcolor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -530,6 +531,7 @@ nav ol a:hover, a:focus{
 
     .projectsheader{
         font-size: 2rem;
+        color: var(--Textcolor);
     }
 
     .projectsgroup1{
@@ -574,6 +576,7 @@ nav ol a:hover, a:focus{
     .portfolioheader{
         font-size: 2rem;
         margin-top: 20px;
+        color: var(--Textcolor);
     }
 
     .portfoliodescription{
@@ -597,6 +600,7 @@ nav ol a:hover, a:focus{
         justify-content: center;
         box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                     -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
+                    color: var(--Textcolor);
     }
 
     .portfolioprojecthtml{
@@ -618,7 +622,7 @@ nav ol a:hover, a:focus{
         height: 30px;
         font-size: 1.2rem;
         text-decoration: none;
-        color: var(--textcolor);
+        color: var(--Textcolor);
         border-radius: 6px;
         box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                     -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
@@ -661,10 +665,12 @@ nav ol a:hover, a:focus{
     .videocontainer{
         width: 1059px;
         
+        
     }
 
     .minijamvideoheader{
         font-size: 3rem;
+        color: var(--Textcolor);
     }
 
     .videocontainercontainer{
@@ -680,6 +686,7 @@ nav ol a:hover, a:focus{
     }
 
     .minijamvideo{
+        padding-left: 2px;
         width: 1058px;
         height: 593px;
         border-radius: 12px;
@@ -699,6 +706,7 @@ nav ol a:hover, a:focus{
     .recentpostsheader{
         font-size: 3rem;
         margin-top: 70px;
+        color: var(--Textcolor);
     }
 
     .recentposts1{
