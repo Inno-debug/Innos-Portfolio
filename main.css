@@ -1412,6 +1412,7 @@ nav ol a:hover, a:focus{
 
     .footercontentcontainer{
         line-height: 1.5rem;
+        font-size: .6rem;
     }
 
     .footercontentcontainer h4{
@@ -1427,6 +1428,8 @@ nav ol a:hover, a:focus{
         display: flex;
         list-style: none;
         color: var(--Secondarytextcolor);
+        font-size: .6rem;
+        
     }
 
     .attribution li a{
@@ -2230,10 +2233,12 @@ nav ol a:hover, a:focus{
 
     .footercontentcontainer{
         line-height: 1.5rem;
+       font-size: 1rem;
     }
 
     .footercontentcontainer h4{
         color: var(--Secondarytextcolor);
+        
     }
 
     .footercontentcontainer h4 a{
@@ -2245,6 +2250,7 @@ nav ol a:hover, a:focus{
         display: flex;
         list-style: none;
         color: var(--Secondarytextcolor);
+        font-size: 1rem;
     }
 
     .attribution li a{
