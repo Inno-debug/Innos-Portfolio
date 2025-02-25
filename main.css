@@ -199,10 +199,10 @@ nav ol a:hover, a:focus{
 
         
     }
-    .Socialcard .SCheader .SCheaderD{
+    .Socialcard .SCheader .SCheaderD h1{
         display: flex;
         justify-content: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .Socialcard .SCheader .SCheaderul{
         padding-top: 15px;
@@ -912,7 +912,7 @@ nav ol a:hover, a:focus{
         padding-top: 15px;
         display: flex;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
         list-style: none;
     }
     .Socialcard .SCheader .SCheaderul a:hover, a:focus{
@@ -1883,7 +1883,7 @@ nav ol a:hover, a:focus{
         max-height: 0;
         overflow: hidden;
         display: flex;
-        gap: 20px;
+        gap: 10px;
         min-width: calc(var(--Universalwidth) / 2 + 7.5px);
         
     }
@@ -1907,7 +1907,9 @@ nav ol a:hover, a:focus{
         width: 110px;
         position: relative;
         bottom: 25px;
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-left: 5px;
+
     }
 
     .purduedef{
@@ -1938,13 +1940,11 @@ nav ol a:hover, a:focus{
 
 
     .subway{
-        
         max-height: 0;
         overflow: hidden;
         min-width: calc(var(--Universalwidth) / 2 + .5px);
         display: flex;
-        gap: 35px;
-        
+        gap: 25px; 
     }
 
     .subway{
@@ -1990,6 +1990,7 @@ nav ol a:hover, a:focus{
     }
 
 
+
     /*Projects*/
 
    
@@ -2006,8 +2007,8 @@ nav ol a:hover, a:focus{
         border-radius: 12px;
     } 
 
-    .projectsheader{
-        font-size: 2rem;
+    .projectsheader h2{
+        font-size: 3rem;
         color: var(--Textcolor);
     }
 
