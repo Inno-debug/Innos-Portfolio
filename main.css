@@ -154,6 +154,7 @@ nav ol a:hover, a:focus{
         display: flex;
         justify-content: space-between;
         color: var(--Textcolor);
+
         
     }
     .Socialcard .SCheader .SCheaderD{
@@ -629,6 +630,10 @@ nav ol a:hover, a:focus{
         margin-top: 1.1px;
     }
 
+    .portfoliosourcecode:hover, .portfoliosourcecode:focus{
+        background-color: var(--Secondarycolor);
+    }
+
     /*Minijam*/
 
     .minijam{
@@ -663,18 +668,20 @@ nav ol a:hover, a:focus{
     }
 
     .videocontainercontainer{
-        border: 2px solid var(--Secondarycolor);
+        border: 3px solid var(--Secondarycolor);
         border-radius: 12px;
         min-height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 70px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
     }
 
     .minijamvideo{
         width: 1058px;
-        height: 595px;
+        height: 593px;
         border-radius: 12px;
     }
 
@@ -702,6 +709,9 @@ nav ol a:hover, a:focus{
         display: flex;
         justify-content: space-between;
         min-height: 150px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
+                    
     }
 
 
@@ -751,7 +761,11 @@ nav ol a:hover, a:focus{
         line-height: 1.5rem;
     }
 
-    .footercontentcontainer a{
+    .footercontentcontainer h4{
+        color: var(--Secondarytextcolor);
+    }
+
+    .footercontentcontainer h4 a{
         text-decoration: none;
         color: var(--Textcolor);
     }
@@ -778,6 +792,14 @@ nav ol a:hover, a:focus{
     .footericons img{
         height: 24px;
         width: 24px;
+    }
+
+    .attribution a:hover, a:focus{
+        filter: var(--Anchorfilter);
+    }
+
+    .footericons a:hover, a:focus{
+        filter: var(--Anchorfilter);
     }
 
     
