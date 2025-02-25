@@ -1522,9 +1522,13 @@ nav .Navwords{
     
 }
 
+nav .NavwordsNavname{
+    font-size: 1.4rem;
+}
+
 nav .Navname{
     font-weight: bolder;
-   font-size: 1.5rem;
+   
 }
 
 .navulanch{
