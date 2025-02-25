@@ -122,6 +122,7 @@ nav .NavwordsNavname{
     align-items: center;
     height: 0;
     overflow: hidden;
+    
 }
 
 nav .Navanchors{
@@ -377,6 +378,7 @@ nav ol a:hover, a:focus{
     .educh2{
         font-size: 2rem;
         margin-bottom: 75px;
+        color: var(--Textcolor);
     }
     
     .purdue{
@@ -416,6 +418,7 @@ nav ol a:hover, a:focus{
         font-size: 2rem;
         margin-top: 75px;
         margin-bottom: 75px;
+        color: var(--Textcolor);
     }
 
     .subway{
@@ -823,6 +826,7 @@ nav .NavwordsNavname{
    display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--Textcolor);
 }
 
 nav .Navanchors{
@@ -1078,6 +1082,7 @@ nav ol a:hover, a:focus{
     .educh2{
         font-size: 2rem;
         margin-bottom: 75px;
+        color: var(--Textcolor);
     }
     
     .purdue{
@@ -1117,6 +1122,7 @@ nav ol a:hover, a:focus{
         font-size: 2rem;
         margin-top: 75px;
         margin-bottom: 75px;
+        color: var(--Textcolor);
     }
 
     .subway{
@@ -1489,6 +1495,7 @@ nav{
     background-color: var(--Primarycolor);
     display: flex;
     justify-content: center;
+    color: var(--Textcolor);
 }
 
 .navulcontainercontainer{
