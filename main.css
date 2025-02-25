@@ -14,12 +14,11 @@
 :root{
         
         --Background: #FFFFFF;
-        --Primarycolor: #007BFF;
-        --Secondarycolor: #212529;
-        --Accentcolor: #28A745;
-        --Highlightcolor:  #d3d3d3;
-        --Textcolor: #212529;
-        --Secondarytextcolor: #6C757D;
+        --Primarycolor: #4DB6AC;
+        --Secondarycolor: #CED0CE;
+        --Accentcolor: #E6E8E6;
+        --Textcolor: #191919;
+        --Secondarytextcolor: #757575;   
         --Anchorfilter: opacity(40%);
         --Socialbar0: opacity(50%);
         --Socialcard: opacity(40%);
@@ -33,9 +32,7 @@
         --Primarycolor: #BB86FC;
         --Secondarycolor: #03DAC6;
         --Accentcolor: #CF6679;
-        --Highlightcolor:  #6fa2a2;
         --Textcolor: #E0E0E0;
-        --Secondarytextcolor: #E0E0E0;
         --Anchorfilter: brightness(10%);
         --Socialbar0: opacity(20%);
         --Socialcard: opacity(40%);
@@ -355,33 +352,33 @@ nav ol a:hover, a:focus{
     }
 
     .eduh2contain{
-        background-color: var(--Secondarycolor);
+        background-color: var(--Accentcolor);
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
     .worh2contain{
-        background-color: var(--Secondarycolor);
+        background-color: var(--Accentcolor);
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
     }
 
     .educh2{
-        border-top: 10px solid var(--Secondarycolor);
-        border-left: 10px solid var(--Secondarycolor);
-        border-bottom: 10px solid var(--Secondarycolor);
+        border-top: 10px solid var(--Accentcolor);
+        border-left: 10px solid var(--Accentcolor);
+        border-bottom: 10px solid var(--Accentcolor);
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        color: white;
+        color: var(--Textcolor);
     }
 
     .worh2{
-        border-top: 10px solid var(--Secondarycolor);
-        border-right: 10px solid var(--Secondarycolor);
-        border-bottom: 10px solid var(--Secondarycolor);
+        border-top: 10px solid var(--Accentcolor);
+        border-right: 10px solid var(--Accentcolor);
+        border-bottom: 10px solid var(--Accentcolor);
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        color: white;
+        color: var(--Textcolor);
     }
 
     .workh2{
@@ -406,13 +403,13 @@ nav ol a:hover, a:focus{
     }
 
     .educationinput:checked ~ .educationh2  .educh2{
-        background-color: var(--Primarycolor);
+        background-color: var(--Secondarycolor);
         border-radius: 20px;
         
     }
 
     .workinput:checked ~ .workh2 .worh2{
-        background-color: var(--Primarycolor);
+        background-color: var(--Secondarycolor);
         border-radius: 20px;
     }
 
@@ -443,7 +440,7 @@ nav ol a:hover, a:focus{
     }
 
     .purduedef{
-        color: var(--Textcolor);
+   
         margin-top: 20px;
         line-height: 25px
     }
@@ -487,7 +484,7 @@ nav ol a:hover, a:focus{
     }
 
     .subwaydef{
-        color: var(--Textcolor);
+
         display: flex;
         flex-direction: column; 
         margin-top: 20px;
@@ -543,7 +540,7 @@ nav ol a:hover, a:focus{
 
     /*Portfolio Project*/
     .portfolioProject{
-        border: 2px solid black;
+        border: 2px solid var(--Secondarycolor);
         width: 529.5px;
         height: 600px;
         border-radius: 12px;
@@ -582,7 +579,7 @@ nav ol a:hover, a:focus{
 
         font-size: 1.2rem;
         margin-top: 20px;
-
+        color: var(--Secondarytextcolor);
     }
 
     .portfoliotechnologies{
@@ -593,7 +590,7 @@ nav ol a:hover, a:focus{
     }
 
     .portfoliotechnologies li{
-        border: 2px solid black;
+        border: 2px solid var(--Secondarycolor);
         border-radius: 6px;
         display: flex;
         justify-content: center;
@@ -620,7 +617,7 @@ nav ol a:hover, a:focus{
         height: 30px;
         font-size: 1.2rem;
         text-decoration: none;
-        color: var(--Secondarytextcolor);
+        color: var(--textcolor);
         border-radius: 6px;
         box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                     -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
@@ -666,7 +663,7 @@ nav ol a:hover, a:focus{
     }
 
     .videocontainercontainer{
-        border: 2px solid black;
+        border: 2px solid var(--Secondarycolor);
         border-radius: 12px;
         min-height: 100px;
         display: flex;
@@ -676,8 +673,8 @@ nav ol a:hover, a:focus{
     }
 
     .minijamvideo{
-        width: 900px;
-        height: 600px;
+        width: 1058px;
+        height: 595px;
         border-radius: 12px;
     }
 
@@ -699,9 +696,8 @@ nav ol a:hover, a:focus{
 
     .recentposts1{
         text-decoration: none;
-        color: var(--Textcolor);
         margin-top: 70px;
-        border: 2px solid black;
+        border: 2px solid var(--Secondarycolor);
         border-radius: 12px;
         display: flex;
         justify-content: space-between;
@@ -714,13 +710,19 @@ nav ol a:hover, a:focus{
         width: 85%;
     }
 
+    .recentpostsdate{
+        color: var(--Textcolor);
+    }
+
     .recentpostsh3{
         font-size: 2rem;
         margin-bottom: 5px;
+        color: var(--Textcolor);
     }
 
     .recentpostscontent{
         font-size: 1.2rem;
+        color: var(--Secondarytextcolor);
     }
 
     .recentpostsdate{
@@ -732,4 +734,51 @@ nav ol a:hover, a:focus{
 
     /*Footer*/
 
+    .footer{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .footercontainer{
+        width: 1059px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footercontentcontainer{
+        line-height: 1.5rem;
+    }
+
+    .footercontentcontainer a{
+        text-decoration: none;
+        color: var(--Textcolor);
+    }
+
+    .attribution{
+        display: flex;
+        list-style: none;
+        color: var(--Secondarytextcolor);
+    }
+
+    .attribution li a{
+        text-decoration: none;
+        color: var(--Secondarytextcolor);
+    }
+
+    .footericons{
+        padding-top: 10px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .footericons img{
+        height: 24px;
+        width: 24px;
+    }
+
+    
 }
