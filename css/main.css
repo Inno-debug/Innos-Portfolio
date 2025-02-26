@@ -594,8 +594,8 @@ html {
     align-items: center;
     margin-top: 70px;
     box-shadow: var(--Boxshadow);
-    width: clamp(300px, 100vw, 500px);
-    height: 300px;
+    width: clamp(308px, 100vw, 508px);
+    height: 308px;
   }
 
   .minijamvideo {
