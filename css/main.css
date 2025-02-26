@@ -468,7 +468,7 @@ html {
   .portfolioProject {
     border: 2px solid var(--Secondarycolor);
     width: calc(var(--Universalwidth) / 2);
-    min-height: 550px;
+    min-height: 600px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
