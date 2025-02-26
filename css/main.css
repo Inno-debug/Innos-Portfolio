@@ -2055,12 +2055,14 @@ html {
     align-items: center;
     margin-top: 70px;
     box-shadow: var(--Boxshadow);
+    height: 600px;
+    width: var(--Universalwidth);
   }
 
   .minijamvideo {
     padding-left: 2px;
-    width: calc(var(--Universalwidth) - 1px);
-    height: 595px;
+    width: calc(var(--Universalwidth) - 4px);
+    height: 590px;
     border-radius: 12px;
   }
 

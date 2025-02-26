@@ -165,6 +165,140 @@ html {
     }
   }
 
+  /*Projects*/
+
+  .projects {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectscontainer {
+    width: var(--Universalwidth);
+    border-radius: 12px;
+  }
+
+  .projectsheader h2 {
+    font-size: 2rem;
+    color: var(--Textcolor);
+  }
+
+  .projectsgroup1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /*Portfolio Project*/
+  .portfolioProject {
+    border: 2px solid var(--Secondarycolor);
+    width: calc(var(--Universalwidth) / 2);
+    height: 550px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--Boxshadow);
+  }
+
+  .portfolioimgcontainer {
+    padding-top: 30px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolioimage {
+    width: 230px;
+    height: 150px;
+    border-radius: 20px;
+  }
+
+  .portfoliocontentcontainer {
+    width: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .portfolioheader {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--Textcolor);
+  }
+
+  .portfoliodescription {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: var(--Secondarytextcolor);
+  }
+
+  .portfoliotechnologies {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+  }
+
+  .portfoliotechnologies li {
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--Boxshadow);
+    color: var(--Textcolor);
+  }
+
+  .portfolioprojecthtml {
+    width: 45px;
+  }
+  .portfolioprojectcss {
+    width: 35px;
+  }
+  .portfolioprojectgithub {
+    width: 65px;
+  }
+
+  .portfoliosourcecode {
+    margin-top: 20px;
+    border: 2px solid var(--Secondarycolor);
+    display: flex;
+    justify-content: space-around;
+    width: 110px;
+    height: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--Textcolor);
+    border-radius: 6px;
+    box-shadow: var(--Boxshadow);
+  }
+
+  .portfoliosourcecodeimg {
+    width: 24px;
+    height: 24px;
+    margin-top: 1.1px;
+  }
+
+  .portfoliosourcecode:hover,
+  .portfoliosourcecode:focus {
+    background-color: var(--Secondarycolor);
+  }
+
+  /*Minijam*/
+
+  .minijam {
+    width: calc(var(--Universalwidth) / 2);
+    border-radius: 12px;
+  }
+
+  .minijamgithub {
+    width: 65px;
+  }
+  .minijamcsharp {
+    width: 25px;
+  }
+
   /*Footer*/
 
   .footer {
@@ -349,6 +483,139 @@ html {
     }
   }
 
+  /*Projects*/
+
+  .projects {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectscontainer {
+    width: var(--Universalwidth);
+    border-radius: 12px;
+  }
+
+  .projectsheader h2 {
+    font-size: 2rem;
+    color: var(--Textcolor);
+  }
+
+  .projectsgroup1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /*Portfolio Project*/
+  .portfolioProject {
+    border: 2px solid var(--Secondarycolor);
+    width: calc(var(--Universalwidth) / 2);
+    height: 550px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--Boxshadow);
+  }
+
+  .portfolioimgcontainer {
+    padding-top: 30px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolioimage {
+    width: 230px;
+    height: 150px;
+    border-radius: 20px;
+  }
+
+  .portfoliocontentcontainer {
+    width: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .portfolioheader {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--Textcolor);
+  }
+
+  .portfoliodescription {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: var(--Secondarytextcolor);
+  }
+
+  .portfoliotechnologies {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+  }
+
+  .portfoliotechnologies li {
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--Boxshadow);
+    color: var(--Textcolor);
+  }
+
+  .portfolioprojecthtml {
+    width: 45px;
+  }
+  .portfolioprojectcss {
+    width: 35px;
+  }
+  .portfolioprojectgithub {
+    width: 65px;
+  }
+
+  .portfoliosourcecode {
+    margin-top: 20px;
+    border: 2px solid var(--Secondarycolor);
+    display: flex;
+    justify-content: space-around;
+    width: 110px;
+    height: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--Textcolor);
+    border-radius: 6px;
+    box-shadow: var(--Boxshadow);
+  }
+
+  .portfoliosourcecodeimg {
+    width: 24px;
+    height: 24px;
+    margin-top: 1.1px;
+  }
+
+  .portfoliosourcecode:hover,
+  .portfoliosourcecode:focus {
+    background-color: var(--Secondarycolor);
+  }
+
+  /*Minijam*/
+
+  .minijam {
+    width: calc(var(--Universalwidth) / 2);
+    border-radius: 12px;
+  }
+
+  .minijamgithub {
+    width: 65px;
+  }
+  .minijamcsharp {
+    width: 25px;
+  }
+
   /*Footer*/
 
   .footer {
@@ -529,6 +796,137 @@ html {
     100% {
       transform: scaleY(1);
     }
+  }
+
+  /*Projects*/
+
+  .projects {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectscontainer {
+    width: var(--Universalwidth);
+    border-radius: 12px;
+  }
+
+  .projectsheader h2 {
+    font-size: 3rem;
+    color: var(--Textcolor);
+  }
+
+  .projectsgroup1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /*Portfolio Project*/
+  .portfolioProject {
+    border: 2px solid var(--Secondarycolor);
+    width: calc(var(--Universalwidth) / 2);
+    height: 600px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--Boxshadow);
+  }
+
+  .portfolioimgcontainer {
+    padding-top: 30px;
+    width: 460px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolioimage {
+    width: 460px;
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .portfoliocontentcontainer {
+    width: 460px;
+  }
+
+  .portfolioheader {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: var(--Textcolor);
+  }
+
+  .portfoliodescription {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: var(--Secondarytextcolor);
+  }
+
+  .portfoliotechnologies {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+  }
+
+  .portfoliotechnologies li {
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--Boxshadow);
+    color: var(--Textcolor);
+  }
+
+  .portfolioprojecthtml {
+    width: 45px;
+  }
+  .portfolioprojectcss {
+    width: 35px;
+  }
+  .portfolioprojectgithub {
+    width: 65px;
+  }
+
+  .portfoliosourcecode {
+    margin-top: 20px;
+    border: 2px solid var(--Secondarycolor);
+    display: flex;
+    justify-content: space-around;
+    width: 110px;
+    height: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--Textcolor);
+    border-radius: 6px;
+    box-shadow: var(--Boxshadow);
+  }
+
+  .portfoliosourcecodeimg {
+    width: 24px;
+    height: 24px;
+    margin-top: 1.1px;
+  }
+
+  .portfoliosourcecode:hover,
+  .portfoliosourcecode:focus {
+    background-color: var(--Secondarycolor);
+  }
+
+  /*Minijam*/
+
+  .minijam {
+    width: calc(var(--Universalwidth) / 2);
+    border-radius: 12px;
+  }
+
+  .minijamgithub {
+    width: 65px;
+  }
+  .minijamcsharp {
+    width: 25px;
   }
   /*Footer*/
 
