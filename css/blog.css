@@ -255,7 +255,7 @@ html {
     display: flex;
     list-style: none;
     color: var(--Secondarytextcolor);
-    font-size: clamp(0.4rem, 1.75vw, 0.6rem);
+    font-size: clamp(0.4rem, 1vw, 0.6rem);
   }
 
   .attribution li a {
