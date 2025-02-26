@@ -123,6 +123,119 @@ html {
     filter: var(--Anchorfilter);
   }
 
+  /*Social Navigation Bar*/
+
+  nav ol {
+    animation: open1 0.5s ease-in-out forwards;
+    background-color: var(--Textcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    gap: 2rem;
+    padding-top: 6px;
+    display: none;
+  }
+
+  nav ol img {
+    height: 20px;
+    width: 20px;
+  }
+
+  nav:hover ol,
+  nav:focus-within ol {
+    display: flex;
+  }
+
+  nav ol a:hover,
+  a:focus {
+    filter: var(--Socialbar0);
+  }
+
+  @keyframes open1 {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.2);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  /*Contact Card*/
+
+  .contact {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactcontainer {
+    width: var(--Universalwidth);
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 12px;
+    box-shadow: var(--Boxshadow);
+    padding: 20px;
+  }
+
+  .contactheader {
+    color: var(--Textcolor);
+  }
+
+  .contactdescription {
+    color: var(--Secondarytextcolor);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  .contactcontent {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 10px;
+  }
+
+  .contactcontent li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .contactcontent a {
+    color: var(--Textcolor);
+    text-decoration: none;
+    line-height: 25px;
+  }
+
+  .contactcontent a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+
+  .contactimgcontainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .contactcontent img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contactcontent h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactmini {
+    color: var(--Secondarytextcolor);
+  }
+
   /*Footer*/
 
   .footer {
