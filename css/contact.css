@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    --Navfont: "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", monospace;
+}
+
+:root{
+        
+        --Background: #FFFFFF;
+        --Primarycolor: #1976D2;
+        --Secondarycolor: #CED0CE;
+        --Accentcolor: #E6E8E6;
+        --Textcolor: #191919;
+        --Secondarytextcolor: #757575;   
+        --Anchorfilter: opacity(40%);
+        --Socialbar0: opacity(50%);
+        --Socialcard: opacity(40%);
+        --Boxshadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
+}
+
+
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --Background: #121212;
+        --Primarycolor: #1e88e5;
+        --Secondarycolor: #64B5F6;
+        --Accentcolor: #121212;
+        --Textcolor: #e0e0e0;
+        --Secondarytextcolor: #b0b0b0;   
+        --Anchorfilter: brightness(10%);
+        --Socialbar0: opacity(20%);
+        --Socialcard: opacity(40%);
+        --Boxshadow:  6px 6px 10px -1px rgba(0, 0, 0, 0.5),
+        -6px -6px 10px -1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+html {
+    font-family: var(--Navfont);
+}
