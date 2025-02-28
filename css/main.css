@@ -935,11 +935,13 @@ html {
     color: var(--Textcolor);
     font-size: 2rem;
   }
-  .Educationsectioncontent {
+  .educationcontentcontainer {
     border: 2px solid var(--Secondarycolor);
     border-radius: 12px;
     padding: 40px;
     line-height: 1.8rem;
+    display: flex;
+    align-items: center;
   }
   .Educationsectionp1 {
     color: var(--Secondarytextcolor);
@@ -1574,11 +1576,14 @@ html {
     color: var(--Textcolor);
     font-size: 3rem;
   }
-  .Educationsectioncontent {
+  .educationcontentcontainer {
     border: 2px solid var(--Secondarycolor);
     border-radius: 12px;
     padding: 40px;
     line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
   .Educationsectionp1 {
     color: var(--Secondarytextcolor);
@@ -1596,6 +1601,15 @@ html {
   .Educationsectionp4 {
     color: var(--Textcolor);
     font-size: 1.2rem;
+  }
+
+  .educationimagecontainer img {
+    width: 100px;
+    height: 100px;
+  }
+  .educationimagecontainer .subwaylogo {
+    width: 90px;
+    height: 80px;
   }
   /*Projects*/
 
