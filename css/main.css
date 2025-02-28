@@ -283,6 +283,7 @@ html {
     font-size: 1.3rem;
   }
   /*Education and Work Section*/
+
   .Educationsection {
     display: flex;
     justify-content: center;
@@ -294,13 +295,16 @@ html {
     margin-top: 50px;
     margin-bottom: 50px;
     color: var(--Textcolor);
-    font-size: 2rem;
+    font-size: 3rem;
   }
-  .Educationsectioncontent {
+  .educationcontentcontainer {
     border: 2px solid var(--Secondarycolor);
     border-radius: 12px;
     padding: 40px;
     line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 40px;
   }
   .Educationsectionp1 {
     color: var(--Secondarytextcolor);
@@ -318,6 +322,15 @@ html {
   .Educationsectionp4 {
     color: var(--Textcolor);
     font-size: 1.2rem;
+  }
+
+  .educationimagecontainer img {
+    width: 90px;
+    height: 90px;
+  }
+  .educationimagecontainer .subwaylogo {
+    width: 80px;
+    height: 70px;
   }
   /*Projects*/
 
@@ -922,6 +935,7 @@ html {
   }
 
   /*Education and Work Section*/
+
   .Educationsection {
     display: flex;
     justify-content: center;
@@ -933,7 +947,7 @@ html {
     margin-top: 50px;
     margin-bottom: 50px;
     color: var(--Textcolor);
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .educationcontentcontainer {
     border: 2px solid var(--Secondarycolor);
@@ -942,6 +956,7 @@ html {
     line-height: 1.8rem;
     display: flex;
     align-items: center;
+    gap: 40px;
   }
   .Educationsectionp1 {
     color: var(--Secondarytextcolor);
@@ -959,6 +974,15 @@ html {
   .Educationsectionp4 {
     color: var(--Textcolor);
     font-size: 1.2rem;
+  }
+
+  .educationimagecontainer img {
+    width: 90px;
+    height: 90px;
+  }
+  .educationimagecontainer .subwaylogo {
+    width: 80px;
+    height: 70px;
   }
   /*Projects*/
 
