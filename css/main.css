@@ -21,8 +21,6 @@
   --Anchorfilter: opacity(40%);
   --Socialbar0: opacity(50%);
   --Socialcard: opacity(40%);
-  --Boxshadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,8 +34,6 @@
     --Anchorfilter: brightness(10%);
     --Socialbar0: opacity(20%);
     --Socialcard: opacity(40%);
-    --Boxshadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
-      -6px -6px 10px -1px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -80,9 +76,8 @@ html {
   }
 
   nav ul {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 100%;
+    display: flex;
+    justify-content: center;
     list-style: none;
     height: clamp(80px, 2vw, 110px);
   }
@@ -125,49 +120,7 @@ html {
     filter: var(--Anchorfilter);
   }
 
-  /*Social Navigation Bar*/
-
-  nav ol {
-    animation: open1 0.5s ease-in-out forwards;
-    background-color: var(--Textcolor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    list-style: none;
-    gap: 2rem;
-    padding-top: 6px;
-    display: none;
-  }
-
-  nav ol img {
-    width: 24px;
-    height: 24px;
-  }
-
-  nav:hover ol,
-  nav:focus-within ol {
-    display: flex;
-  }
-
-  nav ol a:hover,
-  a:focus {
-    filter: var(--Socialbar0);
-  }
-
-  @keyframes open1 {
-    0% {
-      transform: scaleY(0);
-    }
-    80% {
-      transform: scaleY(1.2);
-    }
-    100% {
-      transform: scaleY(1);
-    }
-  }
-
-  /*Social Card*/
+  /*Social card*/
 
   .Socialcard {
     padding-top: 150px;
@@ -180,7 +133,6 @@ html {
     border-radius: 12px;
     padding: 10px 30px 10px 20px;
     width: var(--Universalwidth);
-    box-shadow: var(--Boxshadow);
   }
 
   .Socialcard .SCheader {
@@ -188,16 +140,17 @@ html {
     justify-content: space-between;
     color: var(--Textcolor);
   }
-  .Socialcard .SCheader .SCheaderD h1 {
+  .Socialcard .SCheader .SCheaderD {
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .Socialcard .SCheader .SCheaderul {
     padding-top: 15px;
+    padding-right: 24px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     list-style: none;
   }
   .Socialcard .SCheader .SCheaderul a:hover,
@@ -231,6 +184,7 @@ html {
     color: var(--Secondarytextcolor);
     margin-right: 20px;
     gap: 10px;
+    margin-top: 3px;
   }
 
   .SCLitem1:hover,
@@ -252,8 +206,13 @@ html {
     justify-content: space-between;
   }
 
+  .socialcardp {
+    padding-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+
   .Socialcard .SCfooter {
-    padding-top: 20px;
     list-style: none;
     font-size: 1rem;
     color: var(--Textcolor);
@@ -263,7 +222,6 @@ html {
   #skills {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
   }
   .skills1 {
     width: var(--Universalwidth);
@@ -292,158 +250,82 @@ html {
     border: 2px solid var(--Secondarycolor);
     border-radius: 8px;
     color: var(--Secondarytextcolor);
-    box-shadow: var(--Boxshadow);
   }
 
   .skills-html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 25px;
+    width: 100px;
+    height: 40px;
+    gap: 8px;
   }
   .skills-html-img {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
   .skills-html-p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .skills-css {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 54px;
-    height: 25px;
+    width: 90px;
+    height: 40px;
+    gap: 8px;
   }
   .skills-css-img {
     width: 20px;
     height: 20px;
   }
   .skills-css-p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
-  .skills-javascript {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 84px;
-    height: 25px;
-  }
-  .skills-javascript-img {
-    width: 20px;
-    height: 20px;
-  }
-  .skills-javascript-p {
-    font-size: 1.1rem;
-  }
-
   /*Education and Work Section*/
-
-  .educationworkarticle {
+  .Educationsection {
     display: flex;
     justify-content: center;
   }
-
-  .educationworklabels {
+  .Educationsectioncontainer {
     width: var(--Universalwidth);
-    list-style: none;
   }
-
-  .educationworklabels input {
-    display: none;
-  }
-
-  /*Purdue*/
-
-  .educh2 {
-    font-size: 2rem;
-    margin-bottom: 75px;
+  .Educationsectionheader {
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: var(--Textcolor);
+    font-size: 2rem;
   }
-
-  .purdue {
-    display: flex;
-    font-size: 1.1rem;
+  .Educationsectioncontent {
     border: 2px solid var(--Secondarycolor);
     border-radius: 12px;
-    box-shadow: var(--Boxshadow);
-    padding: 20px;
+    padding: 40px;
+    line-height: 1.8rem;
   }
-
-  .purdueP1 {
+  .Educationsectionp1 {
     color: var(--Secondarytextcolor);
+    font-size: 1.2rem;
   }
-
-  .purdueh3 {
+  .Educationsectionp2 {
     color: var(--Textcolor);
+    font-size: 1.5rem;
+    font-weight: bold;
   }
-
-  .purdueP2 {
+  .Educationsectionp3 {
     color: var(--Secondarytextcolor);
+    font-size: 1.2rem;
   }
-
-  .nowrap {
-    text-wrap: nowrap;
-  }
-
-  .purdue img {
-    height: 100px;
-    width: 100px;
-    margin-right: 20px;
-  }
-
-  /*Subway*/
-
-  .worh2 {
-    font-size: 2rem;
-    margin-top: 75px;
-    margin-bottom: 75px;
+  .Educationsectionp4 {
     color: var(--Textcolor);
+    font-size: 1.2rem;
   }
-
-  .subway {
-    display: flex;
-    font-size: 1.1rem;
-    border: 2px solid var(--Secondarycolor);
-    border-radius: 12px;
-    box-shadow: var(--Boxshadow);
-    padding: 20px;
-  }
-
-  .subwayP1 {
-    color: var(--Secondarytextcolor);
-  }
-
-  .subwayh3 {
-    color: var(--Textcolor);
-  }
-
-  .subwayP2 {
-    color: var(--Secondarytextcolor);
-  }
-
-  .subwayP3 {
-    color: var(--Textcolor);
-  }
-
-  .nowrap {
-    text-wrap: nowrap;
-  }
-
-  .subway img {
-    height: 55px;
-    width: 55px;
-    margin-right: 20px;
-    margin-top: 16px;
-  }
-
   /*Projects*/
 
   .projects {
     margin-top: 120px;
     display: flex;
     justify-content: center;
+    scroll-margin-top: 100px;
   }
 
   .projectscontainer {
@@ -459,7 +341,7 @@ html {
   .projectsgroup1 {
     margin-top: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     flex-wrap: wrap;
   }
@@ -473,7 +355,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: var(--Boxshadow);
   }
 
   .portfolioimgcontainer {
@@ -519,7 +400,7 @@ html {
     border-radius: 6px;
     display: flex;
     justify-content: center;
-    box-shadow: var(--Boxshadow);
+
     color: var(--Textcolor);
   }
 
@@ -544,7 +425,6 @@ html {
     text-decoration: none;
     color: var(--Textcolor);
     border-radius: 6px;
-    box-shadow: var(--Boxshadow);
   }
 
   .portfoliosourcecodeimg {
@@ -593,7 +473,7 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 70px;
-    box-shadow: var(--Boxshadow);
+
     width: clamp(308px, 100vw, 508px);
     height: 308px;
   }
@@ -608,6 +488,7 @@ html {
   /*Recent Posts*/
 
   .recentposts {
+    scroll-margin-top: 100px;
     display: flex;
     justify-content: center;
   }
@@ -630,7 +511,6 @@ html {
     display: flex;
     justify-content: space-between;
     min-height: 150px;
-    box-shadow: var(--Boxshadow);
   }
 
   .recentposts1container {
@@ -662,6 +542,79 @@ html {
     align-self: center;
     padding-right: 15px;
   }
+  /*Contact Card*/
+
+  .contact {
+    scroll-margin-top: 100px;
+    padding-top: 170px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactcontainer {
+    width: var(--Universalwidth);
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 12px;
+    box-shadow: var(--Boxshadow);
+    padding: 20px;
+  }
+
+  .contactheader {
+    color: var(--Textcolor);
+    font-size: 2rem;
+  }
+
+  .contactdescription {
+    color: var(--Secondarytextcolor);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .contactcontent {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+  }
+
+  .contactcontent li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .contactcontent a {
+    color: var(--Textcolor);
+    text-decoration: none;
+    line-height: 25px;
+  }
+
+  .contactcontent a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+
+  .contactimgcontainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .contactcontent img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contactcontent h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactmini {
+    color: var(--Secondarytextcolor);
+  }
 
   /*Footer*/
 
@@ -681,6 +634,7 @@ html {
 
   .footercontentcontainer {
     line-height: 1.5rem;
+    font-size: 0.8rem;
   }
 
   .footercontentcontainer h4 {
@@ -705,7 +659,6 @@ html {
   }
 
   .footericons {
-    padding-top: 10px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -763,8 +716,8 @@ html {
   }
 
   nav ul {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
+    display: flex;
+    justify-content: center;
     grid-template-rows: 100%;
     list-style: none;
     height: clamp(80px, 2vw, 110px);
@@ -805,48 +758,6 @@ html {
     filter: var(--Anchorfilter);
   }
 
-  /*Social Navigation Bar*/
-
-  nav ol {
-    animation: open1 0.5s ease-in-out forwards;
-    background-color: var(--Textcolor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    list-style: none;
-    gap: 2rem;
-    padding-top: 6px;
-    display: none;
-  }
-
-  nav ol img {
-    width: 24px;
-    height: 24px;
-  }
-
-  nav:hover ol,
-  nav:focus-within ol {
-    display: flex;
-  }
-
-  nav ol a:hover,
-  a:focus {
-    filter: var(--Socialbar0);
-  }
-
-  @keyframes open1 {
-    0% {
-      transform: scaleY(0);
-    }
-    80% {
-      transform: scaleY(1.2);
-    }
-    100% {
-      transform: scaleY(1);
-    }
-  }
-
   /*Social Card*/
 
   .Socialcard {
@@ -860,7 +771,6 @@ html {
     border-radius: 12px;
     padding: 10px 30px 10px 20px;
     width: var(--Universalwidth);
-    box-shadow: var(--Boxshadow);
   }
 
   .Socialcard .SCheader {
@@ -875,9 +785,10 @@ html {
   }
   .Socialcard .SCheader .SCheaderul {
     padding-top: 15px;
+    padding-right: 24px;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 8px;
     list-style: none;
   }
   .Socialcard .SCheader .SCheaderul a:hover,
@@ -911,6 +822,7 @@ html {
     color: var(--Secondarytextcolor);
     margin-right: 20px;
     gap: 10px;
+    margin-top: 3px;
   }
 
   .SCLitem1:hover,
@@ -932,8 +844,13 @@ html {
     justify-content: space-between;
   }
 
+  .socialcardp {
+    padding-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+
   .Socialcard .SCfooter {
-    padding-top: 20px;
     list-style: none;
     font-size: 1rem;
     color: var(--Textcolor);
@@ -943,7 +860,6 @@ html {
   #skills {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
   }
   .skills1 {
     width: var(--Universalwidth);
@@ -972,158 +888,83 @@ html {
     border: 2px solid var(--Secondarycolor);
     border-radius: 8px;
     color: var(--Secondarytextcolor);
-    box-shadow: var(--Boxshadow);
   }
 
   .skills-html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 25px;
+    width: 100px;
+    height: 40px;
+    gap: 8px;
   }
   .skills-html-img {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
   .skills-html-p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .skills-css {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 54px;
-    height: 25px;
+    width: 90px;
+    height: 40px;
+    gap: 8px;
   }
   .skills-css-img {
     width: 20px;
     height: 20px;
   }
   .skills-css-p {
-    font-size: 1.1rem;
-  }
-  .skills-javascript {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 84px;
-    height: 25px;
-  }
-  .skills-javascript-img {
-    width: 20px;
-    height: 20px;
-  }
-  .skills-javascript-p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   /*Education and Work Section*/
-
-  .educationworkarticle {
+  .Educationsection {
     display: flex;
     justify-content: center;
   }
-
-  .educationworklabels {
+  .Educationsectioncontainer {
     width: var(--Universalwidth);
-    list-style: none;
   }
-
-  .educationworklabels input {
-    display: none;
-  }
-
-  /*Purdue*/
-
-  .educh2 {
-    font-size: 2rem;
-    margin-bottom: 75px;
+  .Educationsectionheader {
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: var(--Textcolor);
+    font-size: 2rem;
   }
-
-  .purdue {
-    display: flex;
-    font-size: 1.1rem;
+  .Educationsectioncontent {
     border: 2px solid var(--Secondarycolor);
     border-radius: 12px;
-    box-shadow: var(--Boxshadow);
-    padding: 20px;
+    padding: 40px;
+    line-height: 1.8rem;
   }
-
-  .purdueP1 {
+  .Educationsectionp1 {
     color: var(--Secondarytextcolor);
+    font-size: 1.2rem;
   }
-
-  .purdueh3 {
+  .Educationsectionp2 {
     color: var(--Textcolor);
+    font-size: 1.5rem;
+    font-weight: bold;
   }
-
-  .purdueP2 {
+  .Educationsectionp3 {
     color: var(--Secondarytextcolor);
+    font-size: 1.2rem;
   }
-
-  .nowrap {
-    text-wrap: nowrap;
-  }
-
-  .purdue img {
-    height: 100px;
-    width: 100px;
-    margin-right: 20px;
-  }
-
-  /*Subway*/
-
-  .worh2 {
-    font-size: 2rem;
-    margin-top: 75px;
-    margin-bottom: 75px;
+  .Educationsectionp4 {
     color: var(--Textcolor);
+    font-size: 1.2rem;
   }
-
-  .subway {
-    display: flex;
-    font-size: 1.1rem;
-    border: 2px solid var(--Secondarycolor);
-    border-radius: 12px;
-    box-shadow: var(--Boxshadow);
-    padding: 20px;
-  }
-
-  .subwayP1 {
-    color: var(--Secondarytextcolor);
-  }
-
-  .subwayh3 {
-    color: var(--Textcolor);
-  }
-
-  .subwayP2 {
-    color: var(--Secondarytextcolor);
-  }
-
-  .subwayP3 {
-    color: var(--Textcolor);
-  }
-
-  .nowrap {
-    text-wrap: nowrap;
-  }
-
-  .subway img {
-    height: 55px;
-    width: 55px;
-    margin-right: 20px;
-    margin-top: 16px;
-  }
-
   /*Projects*/
 
   .projects {
     margin-top: 120px;
     display: flex;
     justify-content: center;
+    scroll-margin-top: 100px;
   }
 
   .projectscontainer {
@@ -1139,7 +980,7 @@ html {
   .projectsgroup1 {
     margin-top: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
   }
 
@@ -1152,7 +993,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: var(--Boxshadow);
   }
 
   .portfolioimgcontainer {
@@ -1198,8 +1038,11 @@ html {
     border-radius: 6px;
     display: flex;
     justify-content: center;
-    box-shadow: var(--Boxshadow);
+    align-items: center;
+    font-size: 1.2rem;
     color: var(--Textcolor);
+    width: 45px;
+    height: 35px;
   }
 
   .portfolioprojecthtml {
@@ -1216,14 +1059,15 @@ html {
     margin-top: 20px;
     border: 2px solid var(--Secondarycolor);
     display: flex;
-    justify-content: space-around;
-    width: 110px;
-    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 120px;
+    height: 45px;
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--Textcolor);
     border-radius: 6px;
-    box-shadow: var(--Boxshadow);
   }
 
   .portfoliosourcecodeimg {
@@ -1276,7 +1120,6 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 70px;
-    box-shadow: var(--Boxshadow);
   }
 
   .minijamvideo {
@@ -1289,6 +1132,7 @@ html {
   /*Recent Posts*/
 
   .recentposts {
+    scroll-margin-top: 100px;
     display: flex;
     justify-content: center;
   }
@@ -1311,7 +1155,6 @@ html {
     display: flex;
     justify-content: space-between;
     min-height: 150px;
-    box-shadow: var(--Boxshadow);
   }
 
   .recentposts1container {
@@ -1343,6 +1186,79 @@ html {
     align-self: center;
     padding-right: 15px;
   }
+  /*Contact Card*/
+
+  .contact {
+    scroll-margin-top: 100px;
+    padding-top: 170px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactcontainer {
+    width: var(--Universalwidth);
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 12px;
+    box-shadow: var(--Boxshadow);
+    padding: 20px;
+  }
+
+  .contactheader {
+    color: var(--Textcolor);
+    font-size: 2rem;
+  }
+
+  .contactdescription {
+    color: var(--Secondarytextcolor);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .contactcontent {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+  }
+
+  .contactcontent li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .contactcontent a {
+    color: var(--Textcolor);
+    text-decoration: none;
+    line-height: 25px;
+  }
+
+  .contactcontent a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+
+  .contactimgcontainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .contactcontent img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contactcontent h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactmini {
+    color: var(--Secondarytextcolor);
+  }
 
   /*Footer*/
 
@@ -1362,7 +1278,7 @@ html {
 
   .footercontentcontainer {
     line-height: 1.5rem;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
 
   .footercontentcontainer h4 {
@@ -1378,7 +1294,7 @@ html {
     display: flex;
     list-style: none;
     color: var(--Secondarytextcolor);
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .attribution li a {
@@ -1387,7 +1303,6 @@ html {
   }
 
   .footericons {
-    padding-top: 10px;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -1446,8 +1361,7 @@ html {
   }
 
   nav ul {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
+    display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -1484,48 +1398,6 @@ html {
     filter: var(--Anchorfilter);
   }
 
-  /*Social Navigation Bar*/
-
-  nav ol {
-    animation: open1 0.5s ease-in-out forwards;
-    background-color: var(--Textcolor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    list-style: none;
-    gap: 2rem;
-    padding-top: 6px;
-    display: none;
-  }
-
-  nav ol img {
-    height: 32px;
-    width: 32px;
-  }
-
-  nav:hover ol,
-  nav:focus-within ol {
-    display: flex;
-  }
-
-  nav ol a:hover,
-  a:focus {
-    filter: var(--Socialbar0);
-  }
-
-  @keyframes open1 {
-    0% {
-      transform: scaleY(0);
-    }
-    80% {
-      transform: scaleY(1.2);
-    }
-    100% {
-      transform: scaleY(1);
-    }
-  }
-
   /*Social Card*/
 
   .Socialcard {
@@ -1539,7 +1411,6 @@ html {
     border-radius: 12px;
     padding: 10px 30px 10px 20px;
     width: var(--Universalwidth);
-    box-shadow: var(--Boxshadow);
   }
 
   .Socialcard .SCheader {
@@ -1554,9 +1425,10 @@ html {
   }
   .Socialcard .SCheader .SCheaderul {
     padding-top: 15px;
+    padding-right: 36px;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
   }
   .Socialcard .SCheader .SCheaderul a:hover,
@@ -1611,11 +1483,14 @@ html {
     justify-content: space-between;
   }
 
+  .socialcardp {
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
+
   .Socialcard .SCfooter {
-    padding-top: 20px;
     list-style: none;
     font-size: 1.5rem;
-    line-height: 30px;
     color: var(--Textcolor);
   }
 
@@ -1623,7 +1498,6 @@ html {
   #skills {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
   }
   .skills1 {
     width: var(--Universalwidth);
@@ -1652,258 +1526,84 @@ html {
     border: 2px solid var(--Secondarycolor);
     border-radius: 8px;
     color: var(--Secondarytextcolor);
-    box-shadow: var(--Boxshadow);
   }
 
   .skills-html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
+    gap: 8px;
   }
   .skills-html-img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
   .skills-html-p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .skills-css {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 30px;
+    width: 90px;
+    height: 40px;
+    gap: 8px;
   }
   .skills-css-img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
   .skills-css-p {
-    font-size: 1.5rem;
-  }
-  .skills-javascript {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 110px;
-    height: 30px;
-  }
-  .skills-javascript-img {
-    width: 24px;
-    height: 24px;
-  }
-  .skills-javascript-p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   /*Education and Work Section*/
 
-  .educationworkarticle {
+  .Educationsection {
     display: flex;
     justify-content: center;
   }
-
-  .educationworklabels {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: calc(var(--Universalwidth) + 206px);
-    padding-left: 100px;
+  .Educationsectioncontainer {
+    width: var(--Universalwidth);
   }
-
-  .educationworklabels::after {
-    content: "";
+  .Educationsectionheader {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--Textcolor);
+    font-size: 3rem;
+  }
+  .Educationsectioncontent {
     border: 2px solid var(--Secondarycolor);
-    min-width: var(--Universalwidth);
-    position: relative;
-    right: calc(var(--Universalwidth) + 5px);
-    top: 55px;
-    border-radius: 15px;
-    box-shadow: var(--Boxshadow);
+    border-radius: 12px;
+    padding: 40px;
+    line-height: 1.8rem;
   }
-
-  .educationh2 {
-    text-align: center;
-    cursor: pointer;
+  .Educationsectionp1 {
+    color: var(--Secondarytextcolor);
+    font-size: 1.2rem;
   }
-
-  .eduh2contain {
-    background-color: var(--Accentcolor);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-  }
-
-  .worh2contain {
-    background-color: var(--Accentcolor);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-
-  .educh2 {
-    border-top: 10px solid var(--Accentcolor);
-    border-left: 10px solid var(--Accentcolor);
-    border-bottom: 10px solid var(--Accentcolor);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  .Educationsectionp2 {
     color: var(--Textcolor);
     font-size: 1.5rem;
+    font-weight: bold;
   }
-
-  .worh2 {
-    border-top: 10px solid var(--Accentcolor);
-    border-right: 10px solid var(--Accentcolor);
-    border-bottom: 10px solid var(--Accentcolor);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: var(--Textcolor);
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  .workh2 {
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .educationinput {
-    display: none;
-  }
-
-  .workinput {
-    display: none;
-  }
-
-  .educationinput:checked ~ .purdue {
-    min-height: 300px;
-    padding: 10px 10px 20px;
-  }
-
-  .educationinput:checked ~ .educationh2 .educh2 {
-    background-color: var(--Secondarycolor);
-    border-radius: 20px;
-  }
-
-  .workinput:checked ~ .workh2 .worh2 {
-    background-color: var(--Secondarycolor);
-    border-radius: 20px;
-  }
-
-  .workinput:checked ~ .subway {
-    min-height: 300px;
-    padding: 10px 10px 20px;
-    position: relative;
-    right: 100%;
-  }
-
-  .purdue {
-    max-height: 0;
-    overflow: hidden;
-    display: flex;
-    gap: 10px;
-    min-width: calc(var(--Universalwidth) / 2 + 7.5px);
-  }
-
-  .educh2 {
-    margin-bottom: 0px;
-  }
-
-  .purdue {
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-    padding: 0px;
-  }
-
-  .purdueimg {
-    height: 120px;
-    width: 110px;
-    position: relative;
-    bottom: 25px;
-    margin-top: 20px;
-    margin-left: 5px;
-  }
-
-  .purduedef {
-    margin-top: 20px;
-    line-height: 25px;
-  }
-
-  .purdueP1 {
-    font-size: 1.2rem;
+  .Educationsectionp3 {
     color: var(--Secondarytextcolor);
+    font-size: 1.2rem;
   }
-
-  .purdueh3 {
-    font-size: 1.5rem;
+  .Educationsectionp4 {
     color: var(--Textcolor);
-  }
-
-  .purdueP2 {
     font-size: 1.2rem;
-    color: var(--Secondarytextcolor);
   }
-
-  .purdueP2 span {
-    text-wrap: nowrap;
-  }
-
-  .subway {
-    max-height: 0;
-    overflow: hidden;
-    min-width: calc(var(--Universalwidth) / 2 + 0.5px);
-    display: flex;
-    gap: 25px;
-  }
-
-  .subway {
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-    padding: 0px;
-  }
-
-  .subwayimg {
-    height: 65px;
-    width: 65px;
-    margin-left: 10px;
-    margin-top: 30px;
-  }
-
-  .subwaydef {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  .subwayP1 {
-    font-size: 1.2rem;
-    color: var(--Secondarytextcolor);
-  }
-
-  .subwayh3 {
-    font-size: 1.5rem;
-    color: var(--Textcolor);
-  }
-
-  .subwayP2 {
-    font-size: 1.2rem;
-    color: var(--Secondarytextcolor);
-  }
-
-  .subwayP3 {
-    font-size: 1.2rem;
-    color: var(--Textcolor);
-  }
-
   /*Projects*/
 
   .projects {
     margin-top: 120px;
     display: flex;
     justify-content: center;
+    scroll-margin-top: 100px;
   }
 
   .projectscontainer {
@@ -1919,7 +1619,7 @@ html {
   .projectsgroup1 {
     margin-top: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 20px;
   }
 
@@ -1927,12 +1627,11 @@ html {
   .portfolioProject {
     border: 2px solid var(--Secondarycolor);
     width: calc(var(--Universalwidth) / 2);
-    height: 600px;
+    height: 630px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: var(--Boxshadow);
   }
 
   .portfolioimgcontainer {
@@ -1975,9 +1674,12 @@ html {
     border: 2px solid var(--Secondarycolor);
     border-radius: 6px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    box-shadow: var(--Boxshadow);
+    width: 50px;
+    height: 35px;
     color: var(--Textcolor);
+    font-size: 1.2rem;
   }
 
   .portfolioprojecthtml {
@@ -1994,14 +1696,15 @@ html {
     margin-top: 20px;
     border: 2px solid var(--Secondarycolor);
     display: flex;
-    justify-content: space-around;
-    width: 110px;
-    height: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 120px;
+    height: 40px;
     font-size: 1.2rem;
     text-decoration: none;
     color: var(--Textcolor);
     border-radius: 6px;
-    box-shadow: var(--Boxshadow);
   }
 
   .portfoliosourcecodeimg {
@@ -2054,7 +1757,7 @@ html {
     justify-content: center;
     align-items: center;
     margin-top: 70px;
-    box-shadow: var(--Boxshadow);
+
     height: 600px;
     width: var(--Universalwidth);
   }
@@ -2071,6 +1774,7 @@ html {
   .recentposts {
     display: flex;
     justify-content: center;
+    scroll-margin-top: 100px;
   }
 
   .recentpostscontainer {
@@ -2091,7 +1795,6 @@ html {
     display: flex;
     justify-content: space-between;
     min-height: 150px;
-    box-shadow: var(--Boxshadow);
   }
 
   .recentposts1container {
@@ -2121,6 +1824,80 @@ html {
     align-self: center;
   }
 
+  /*Contact Card*/
+
+  .contact {
+    scroll-margin-top: 100px;
+    padding-top: 170px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactcontainer {
+    width: var(--Universalwidth);
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 12px;
+    box-shadow: var(--Boxshadow);
+    padding: 20px;
+  }
+
+  .contactheader {
+    color: var(--Textcolor);
+    font-size: 2.3rem;
+  }
+
+  .contactdescription {
+    color: var(--Secondarytextcolor);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .contactcontent {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+  }
+
+  .contactcontent li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  .contactcontent a {
+    color: var(--Textcolor);
+    text-decoration: none;
+    line-height: 25px;
+  }
+
+  .contactcontent a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+
+  .contactimgcontainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .contactcontent img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contactcontent h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactmini {
+    color: var(--Secondarytextcolor);
+  }
+
   /*Footer*/
 
   .footer {
@@ -2138,7 +1915,7 @@ html {
 
   .footercontentcontainer {
     line-height: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .footercontentcontainer h4 {
@@ -2163,7 +1940,6 @@ html {
   }
 
   .footericons {
-    padding-top: 10px;
     list-style: none;
     display: flex;
     justify-content: center;
