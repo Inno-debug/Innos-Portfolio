@@ -131,7 +131,7 @@ html {
   .Socialcard .article {
     border: 2px solid var(--Secondarycolor);
     border-radius: 12px;
-    padding: 10px 30px 10px 20px;
+    padding: 10px 5px 10px 20px;
     width: var(--Universalwidth);
   }
 
@@ -147,7 +147,7 @@ html {
   }
   .Socialcard .SCheader .SCheaderul {
     padding-top: 15px;
-    padding-right: 24px;
+
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -182,7 +182,6 @@ html {
     height: 30px;
     text-decoration: none;
     color: var(--Secondarytextcolor);
-    margin-right: 20px;
     gap: 10px;
     margin-top: 3px;
   }
