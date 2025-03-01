@@ -39,6 +39,7 @@
 
 html {
   font-family: var(--Navfont);
+  overflow-x: hidden;
 }
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Smallest Size*/
@@ -492,13 +493,13 @@ html {
     align-items: center;
     margin-top: 70px;
 
-    width: clamp(308px, 100vw, 508px);
+    width: clamp(310px, 100vw, 510px);
     height: 308px;
   }
 
   .minijamvideo {
     padding-left: 2px;
-    width: clamp(300px, 100vw, 500px);
+    width: clamp(250px, 100vw, 500px);
     height: 296px;
     border-radius: 12px;
   }
@@ -600,7 +601,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 10vw, 0.8rem);
   }
 
   .contactcontent a {
