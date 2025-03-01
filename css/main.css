@@ -1368,8 +1368,18 @@ html {
 @media screen and (min-width: 1080px) {
   :root {
     --Universalwidth: 1059px;
-    --Navbarfontsize: 1.4rem;
-    --Navbargap: 4rem;
+    /*Nav Bar*/
+    --NavbarFont: 1.4rem;
+    --NavbarGap: 4rem;
+    /*Social Card*/
+    --SocialcardheaderFont: 2rem;
+    --SocialcardiconsGap: 1rem;
+    --SocialcardlocationFont: 1.5rem;
+    --SocialcardresumeFont: 1.3rem;
+    --SocialcardinfoFont: 1.5rem;
+    /*Skills*/
+    --SkillsheaderFont: 3rem;
+    --SkillsinfoFont: 1.3rem;
   }
 
   html {
@@ -1380,7 +1390,7 @@ html {
 
   nav {
     width: 100%;
-    font-size: var(--Navbarfontsize);
+    font-size: var(--NavbarFont);
     position: fixed;
     z-index: 100;
   }
@@ -1412,12 +1422,12 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--Navbargap);
+    gap: var(--NavbarGap);
   }
 
   nav .Navanchors {
     color: var(--Textcolor);
-    font-size: var(--Navbarfontsize);
+    font-size: var(--NavbarFont);
     text-decoration: none;
   }
 
@@ -1449,14 +1459,14 @@ html {
   .Socialcard .SCheader .SCheaderD {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: var(--SocialcardheaderFont);
   }
   .Socialcard .SCheader .SCheaderul {
     padding-top: 15px;
     padding-right: 36px;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--SocialcardiconsGap);
     list-style: none;
   }
   .Socialcard .SCheader .SCheaderul a:hover,
@@ -1470,7 +1480,7 @@ html {
 
   .Socialcard .SCbody {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: var(--SocialcardlocationFont);
   }
   .Socialcard .SCbody a {
     list-style: none;
@@ -1498,7 +1508,7 @@ html {
   }
 
   .SCLitem2 {
-    font-size: 1.3rem;
+    font-size: var(--SocialcardresumeFont);
   }
 
   .SCLitem3 {
@@ -1518,7 +1528,7 @@ html {
 
   .Socialcard .SCfooter {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: var(--SocialcardinfoFont);
     color: var(--Textcolor);
   }
 
