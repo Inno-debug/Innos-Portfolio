@@ -144,7 +144,7 @@ html {
   .Socialcard .SCheader .SCheaderD {
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .Socialcard .SCheader .SCheaderul {
     padding-top: 15px;
@@ -165,7 +165,7 @@ html {
 
   .Socialcard .SCbody {
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .Socialcard .SCbody a {
     list-style: none;
@@ -214,7 +214,7 @@ html {
 
   .Socialcard .SCfooter {
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--Textcolor);
   }
 
@@ -295,7 +295,7 @@ html {
     margin-top: 50px;
     margin-bottom: 50px;
     color: var(--Textcolor);
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .educationcontentcontainer {
     border: 2px solid var(--Secondarycolor);
@@ -800,7 +800,7 @@ html {
   .Socialcard .SCheader .SCheaderD {
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .Socialcard .SCheader .SCheaderul {
     padding-top: 15px;
@@ -821,7 +821,7 @@ html {
 
   .Socialcard .SCbody {
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .Socialcard .SCbody a {
     list-style: none;
@@ -871,7 +871,7 @@ html {
 
   .Socialcard .SCfooter {
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--Textcolor);
   }
 
@@ -953,7 +953,7 @@ html {
     margin-top: 50px;
     margin-bottom: 50px;
     color: var(--Textcolor);
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .educationcontentcontainer {
     border: 2px solid var(--Secondarycolor);
