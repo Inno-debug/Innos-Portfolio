@@ -131,7 +131,7 @@ html {
   .Socialcard .article {
     border: 2px solid var(--Secondarycolor);
     border-radius: 12px;
-    padding: 10px 5px 10px 20px;
+    padding: 10px 20px 10px 20px;
     width: var(--Universalwidth);
   }
 
