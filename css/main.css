@@ -1369,17 +1369,40 @@ html {
   :root {
     --Universalwidth: 1059px;
     /*Nav Bar*/
-    --NavbarFont: 1.4rem;
-    --NavbarGap: 4rem;
+    --NavbarFont: 1.5rem;
     /*Social Card*/
     --SocialcardheaderFont: 2rem;
-    --SocialcardiconsGap: 1rem;
-    --SocialcardlocationFont: 1.5rem;
+    --SocialcardlocationFont: 1.6rem;
     --SocialcardresumeFont: 1.3rem;
-    --SocialcardinfoFont: 1.5rem;
+    --SocialcardinfoFont: 1.6rem;
     /*Skills*/
     --SkillsheaderFont: 3rem;
     --SkillsinfoFont: 1.3rem;
+    /*Education*/
+    --EducationheaderFont: 3rem;
+    --EducationschoolFont: 1.6rem;
+    --EducationinfoFont: 1.3rem;
+    /*Work*/
+    --WorkheaderFont: 3rem;
+    --WorkschoolFont: 1.6rem;
+    --WorkinfoFont: 1.3rem;
+    /*Projects*/
+    --ProjectsheaderFont: 3rem;
+    --ProjectstitleFont: 1.6rem;
+    --ProjectsinfoFont: 1.3rem;
+    --ProjectsminicardFont: 1.3rem;
+    /*Video*/
+    --VideoheaderFont: 3rem;
+    /*Blog*/
+    --BlogheaderFont: 3rem;
+    --BlogtitleFont: 1.6rem;
+    --BloginfoFont: 1.3rem;
+    /*Contact*/
+    --ContactheaderFont: 2rem;
+    --ContactinfoFont: 1.1rem;
+    --ContacttitleFont: 1.3rem;
+    /*Footer*/
+    --FooternameFont: 1rem;
   }
 
   html {
@@ -1422,7 +1445,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--NavbarGap);
+    gap: 4rem;
   }
 
   nav .Navanchors {
@@ -1466,7 +1489,7 @@ html {
     padding-right: 36px;
     display: flex;
     justify-content: center;
-    gap: var(--SocialcardiconsGap);
+    gap: 1rem;
     list-style: none;
   }
   .Socialcard .SCheader .SCheaderul a:hover,
@@ -1594,7 +1617,7 @@ html {
     height: 20px;
   }
   .skills-css-p {
-    font-size: 1.3rem;
+    font-size: var(--SkillsinfoFont);
   }
 
   /*Education and Work Section*/
@@ -1610,7 +1633,7 @@ html {
     margin-top: 50px;
     margin-bottom: 50px;
     color: var(--Textcolor);
-    font-size: 3rem;
+    font-size: var(--EducationheaderFont);
   }
   .educationcontentcontainer {
     border: 2px solid var(--Secondarycolor);
@@ -1623,20 +1646,20 @@ html {
   }
   .Educationsectionp1 {
     color: var(--Secondarytextcolor);
-    font-size: 1.2rem;
+    font-size: var(--EducationinfoFont);
   }
   .Educationsectionp2 {
     color: var(--Textcolor);
-    font-size: 1.5rem;
+    font-size: var(--EducationschoolFont);
     font-weight: bold;
   }
   .Educationsectionp3 {
     color: var(--Secondarytextcolor);
-    font-size: 1.2rem;
+    font-size: var(--EducationinfoFont);
   }
   .Educationsectionp4 {
     color: var(--Textcolor);
-    font-size: 1.2rem;
+    font-size: var(--EducationinfoFont);
   }
 
   .educationimagecontainer img {
@@ -1668,7 +1691,7 @@ html {
   }
 
   .projectsheader h2 {
-    font-size: 3rem;
+    font-size: var(--ProjectsheaderFont);
     color: var(--Textcolor);
   }
 
@@ -1708,13 +1731,13 @@ html {
   }
 
   .portfolioheader {
-    font-size: 2rem;
+    font-size: var(--ProjectstitleFont);
     margin-top: 20px;
     color: var(--Textcolor);
   }
 
   .portfoliodescription {
-    font-size: 1.2rem;
+    font-size: var(--ProjectsinfoFont);
     margin-top: 20px;
     color: var(--Secondarytextcolor);
   }
@@ -1735,7 +1758,7 @@ html {
     width: 50px;
     height: 35px;
     color: var(--Textcolor);
-    font-size: 1.2rem;
+    font-size: var(--ProjectsminicardFont);
   }
 
   .portfolioprojecthtml {
@@ -1757,7 +1780,7 @@ html {
     gap: 8px;
     width: 120px;
     height: 40px;
-    font-size: 1.2rem;
+    font-size: var(--ProjectsminicardFont);
     text-decoration: none;
     color: var(--Textcolor);
     border-radius: 6px;
@@ -1801,7 +1824,7 @@ html {
   }
 
   .minijamvideoheader {
-    font-size: 3rem;
+    font-size: var(--VideoheaderFont);
     color: var(--Textcolor);
   }
 
@@ -1838,7 +1861,7 @@ html {
   }
 
   .recentpostsheader {
-    font-size: 3rem;
+    font-size: var(--BlogheaderFont);
     margin-top: 70px;
     color: var(--Textcolor);
   }
@@ -1863,13 +1886,13 @@ html {
   }
 
   .recentpostsh3 {
-    font-size: 2rem;
+    font-size: var(--BlogtitleFont);
     margin-bottom: 5px;
     color: var(--Textcolor);
   }
 
   .recentpostscontent {
-    font-size: 1.2rem;
+    font-size: var(--BloginfoFont);
     color: var(--Secondarytextcolor);
   }
 
@@ -1899,12 +1922,12 @@ html {
 
   .contactheader {
     color: var(--Textcolor);
-    font-size: 2.3rem;
+    font-size: var(--ContactheaderFont);
   }
 
   .contactdescription {
     color: var(--Secondarytextcolor);
-    font-size: 1.4rem;
+    font-size: var(--ContacttitleFont);
     margin-bottom: 20px;
   }
 
@@ -1920,7 +1943,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: var(--ContactinfoFont);
   }
 
   .contactcontent a {
@@ -1971,7 +1994,7 @@ html {
 
   .footercontentcontainer {
     line-height: 1.5rem;
-    font-size: 1.2rem;
+    font-size: var(--FooternameFont);
   }
 
   .footercontentcontainer h4 {
@@ -1987,7 +2010,7 @@ html {
     display: flex;
     list-style: none;
     color: var(--Secondarytextcolor);
-    font-size: 1rem;
+    font-size: var(--FooternameFont);
   }
 
   .attribution li a {
