@@ -48,40 +48,40 @@ html {
   :root {
     --Universalwidth: 529.5px;
     /*Nav Bar*/
-    --NavbarFont: 1.5rem;
+    --NavbarFont: 1.4rem;
     /*Social Card*/
-    --SocialcardheaderFont: 2rem;
-    --SocialcardlocationFont: 1.6rem;
-    --SocialcardresumeFont: 1.3rem;
-    --SocialcardinfoFont: 1.6rem;
+    --SocialcardheaderFont: 1.4rem;
+    --SocialcardlocationFont: 1.3rem;
+    --SocialcardresumeFont: 1rem;
+    --SocialcardinfoFont: 1.3rem;
     /*Skills*/
-    --SkillsheaderFont: 3rem;
-    --SkillsinfoFont: 1.3rem;
+    --SkillsheaderFont: 1.8rem;
+    --SkillsinfoFont: 1rem;
     /*Education*/
-    --EducationheaderFont: 3rem;
-    --EducationschoolFont: 1.6rem;
-    --EducationinfoFont: 1.3rem;
+    --EducationheaderFont: 1.8rem;
+    --EducationschoolFont: 1.2rem;
+    --EducationinfoFont: 1rem;
     /*Work*/
-    --WorkheaderFont: 3rem;
-    --WorkschoolFont: 1.6rem;
-    --WorkinfoFont: 1.3rem;
+    --WorkheaderFont: 1.8rem;
+    --WorkschoolFont: 1.2rem;
+    --WorkinfoFont: 1rem;
     /*Projects*/
-    --ProjectsheaderFont: 3rem;
-    --ProjectstitleFont: 1.6rem;
-    --ProjectsinfoFont: 1.3rem;
-    --ProjectsminicardFont: 1.3rem;
+    --ProjectsheaderFont: 1.8rem;
+    --ProjectstitleFont: 1.2rem;
+    --ProjectsinfoFont: 1rem;
+    --ProjectsminicardFont: 1rem;
     /*Video*/
-    --VideoheaderFont: 3rem;
+    --VideoheaderFont: 1.8rem;
     /*Blog*/
-    --BlogheaderFont: 3rem;
-    --BlogtitleFont: 1.6rem;
-    --BloginfoFont: 1.3rem;
+    --BlogheaderFont: 1.8rem;
+    --BlogtitleFont: 1.2rem;
+    --BloginfoFont: 1rem;
     /*Contact*/
-    --ContactheaderFont: 2rem;
-    --ContactinfoFont: 1.1rem;
-    --ContacttitleFont: 1.3rem;
+    --ContactheaderFont: 1.8rem;
+    --ContactinfoFont: 0.7rem;
+    --ContacttitleFont: 1rem;
     /*Footer*/
-    --FooternameFont: 1rem;
+    --FooternameFont: 0.7rem;
   }
 
   html {
@@ -92,7 +92,6 @@ html {
 
   nav {
     width: 100%;
-    font-size: 1.2rem;
     position: fixed;
     z-index: 100;
   }
@@ -135,19 +134,9 @@ html {
     overflow: hidden;
   }
 
-  nav .NavwordsNavname {
-    font-weight: bolder;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 0;
-    overflow: hidden;
-  }
-
   nav .Navanchors {
     color: var(--Textcolor);
-    font-size: 1.2rem;
+    font-size: var(--NavbarFont);
     text-decoration: none;
   }
 
@@ -179,7 +168,7 @@ html {
   .Socialcard .SCheader .SCheaderD {
     display: flex;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: var(--SocialcardheaderFont);
   }
   .Socialcard .SCheader .SCheaderul {
     padding-top: 15px;
@@ -200,7 +189,7 @@ html {
 
   .Socialcard .SCbody {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: var(--SocialcardlocationFont);
   }
   .Socialcard .SCbody a {
     list-style: none;
@@ -228,7 +217,7 @@ html {
   }
 
   .SCLitem2 {
-    font-size: 1rem;
+    font-size: var(--SocialcardresumeFont);
   }
 
   .SCLitem3 {
@@ -249,7 +238,7 @@ html {
 
   .Socialcard .SCfooter {
     list-style: none;
-    font-size: 1.2rem;
+    font-size: var(--SocialcardinfoFont);
     color: var(--Textcolor);
   }
 
@@ -269,7 +258,7 @@ html {
   }
 
   .skills-header2 {
-    font-size: 2rem;
+    font-size: var(--SkillsheaderFont);
     color: var(--Textcolor);
   }
 
@@ -300,7 +289,7 @@ html {
     height: 20px;
   }
   .skills-html-p {
-    font-size: 1.3rem;
+    font-size: var(--SkillsinfoFont);
   }
   .skills-css {
     display: flex;
@@ -315,7 +304,7 @@ html {
     height: 20px;
   }
   .skills-css-p {
-    font-size: 1.3rem;
+    font-size: var(--SkillsinfoFont);
   }
   /*Education and Work Section*/
 
@@ -330,7 +319,7 @@ html {
     margin-top: 50px;
     margin-bottom: 50px;
     color: var(--Textcolor);
-    font-size: 1.5rem;
+    font-size: var(--EducationheaderFont);
   }
   .educationcontentcontainer {
     border: 2px solid var(--Secondarycolor);
@@ -343,20 +332,20 @@ html {
   }
   .Educationsectionp1 {
     color: var(--Secondarytextcolor);
-    font-size: 1.2rem;
+    font-size: var(--EducationinfoFont);
   }
   .Educationsectionp2 {
     color: var(--Textcolor);
-    font-size: 1.5rem;
+    font-size: var(--EducationschoolFont);
     font-weight: bold;
   }
   .Educationsectionp3 {
     color: var(--Secondarytextcolor);
-    font-size: 1.2rem;
+    font-size: var(--EducationinfoFont);
   }
   .Educationsectionp4 {
     color: var(--Textcolor);
-    font-size: 1.2rem;
+    font-size: var(--EducationinfoFont);
   }
 
   .educationimagecontainer img {
@@ -388,7 +377,7 @@ html {
   }
 
   .projectsheader h2 {
-    font-size: 2rem;
+    font-size: var(--ProjectsheaderFont);
     color: var(--Textcolor);
   }
 
@@ -431,13 +420,13 @@ html {
   }
 
   .portfolioheader {
-    font-size: 1.5rem;
+    font-size: var(--ProjectstitleFont);
     margin-top: 20px;
     color: var(--Textcolor);
   }
 
   .portfoliodescription {
-    font-size: 1.2rem;
+    font-size: var(--ProjectsinfoFont);
     margin-top: 20px;
     color: var(--Secondarytextcolor);
   }
@@ -454,7 +443,7 @@ html {
     border-radius: 6px;
     display: flex;
     justify-content: center;
-
+    font-size: var(--ProjectsminicardFont);
     color: var(--Textcolor);
   }
 
@@ -475,7 +464,7 @@ html {
     justify-content: space-around;
     width: 110px;
     height: 30px;
-    font-size: 1.2rem;
+    font-size: var(--ProjectsminicardFont);
     text-decoration: none;
     color: var(--Textcolor);
     border-radius: 6px;
@@ -515,7 +504,7 @@ html {
   }
 
   .minijamvideoheader {
-    font-size: 2rem;
+    font-size: var(--VideoheaderFont);
     color: var(--Textcolor);
   }
 
@@ -552,7 +541,7 @@ html {
   }
 
   .recentpostsheader {
-    font-size: 2rem;
+    font-size: var(--BlogheaderFont);
     margin-top: 70px;
     color: var(--Textcolor);
   }
@@ -574,18 +563,18 @@ html {
 
   .recentpostsdate {
     color: var(--Textcolor);
-    font-size: 1.1rem;
+    font-size: var(--BloginfoFont);
     width: 100px;
   }
 
   .recentpostsh3 {
-    font-size: 1.5rem;
+    font-size: var(--BlogtitleFont);
     margin-bottom: 5px;
     color: var(--Textcolor);
   }
 
   .recentpostscontent {
-    font-size: 1.1rem;
+    font-size: var(--BloginfoFont);
     color: var(--Secondarytextcolor);
   }
 
@@ -615,12 +604,12 @@ html {
 
   .contactheader {
     color: var(--Textcolor);
-    font-size: 2rem;
+    font-size: var(--ContactheaderFont);
   }
 
   .contactdescription {
     color: var(--Secondarytextcolor);
-    font-size: 1.2rem;
+    font-size: var(--ContacttitleFont);
     margin-bottom: 20px;
   }
 
@@ -636,7 +625,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: clamp(0.5rem, 10vw, 0.8rem);
+    font-size: var(--ContactinfoFont);
   }
 
   .contactcontent a {
@@ -677,7 +666,6 @@ html {
     display: flex;
     justify-content: center;
     height: 100px;
-    font-size: 0.6rem;
   }
 
   .footercontainer {
@@ -688,7 +676,7 @@ html {
 
   .footercontentcontainer {
     line-height: 1.5rem;
-    font-size: 0.8rem;
+    font-size: var(--FooternameFont);
   }
 
   .footercontentcontainer h4 {
@@ -698,18 +686,6 @@ html {
   .footercontentcontainer h4 a {
     text-decoration: none;
     color: var(--Textcolor);
-  }
-
-  .attribution {
-    display: flex;
-    list-style: none;
-    color: var(--Secondarytextcolor);
-    font-size: clamp(0.4rem, 1vw, 0.6rem);
-  }
-
-  .attribution li a {
-    text-decoration: none;
-    color: var(--Secondarytextcolor);
   }
 
   .footericons {
@@ -741,40 +717,40 @@ html {
   :root {
     --Universalwidth: 529.5px;
     /*Nav Bar*/
-    --NavbarFont: 1.5rem;
+    --NavbarFont: 1.4rem;
     /*Social Card*/
-    --SocialcardheaderFont: 2rem;
-    --SocialcardlocationFont: 1.6rem;
-    --SocialcardresumeFont: 1.3rem;
-    --SocialcardinfoFont: 1.6rem;
+    --SocialcardheaderFont: 1.5rem;
+    --SocialcardlocationFont: 1.4rem;
+    --SocialcardresumeFont: 1.1rem;
+    --SocialcardinfoFont: 1.4rem;
     /*Skills*/
-    --SkillsheaderFont: 3rem;
-    --SkillsinfoFont: 1.3rem;
+    --SkillsheaderFont: 2rem;
+    --SkillsinfoFont: 1.1rem;
     /*Education*/
-    --EducationheaderFont: 3rem;
-    --EducationschoolFont: 1.6rem;
-    --EducationinfoFont: 1.3rem;
+    --EducationheaderFont: 2rem;
+    --EducationschoolFont: 1.3rem;
+    --EducationinfoFont: 1.1rem;
     /*Work*/
-    --WorkheaderFont: 3rem;
-    --WorkschoolFont: 1.6rem;
-    --WorkinfoFont: 1.3rem;
+    --WorkheaderFont: 2rem;
+    --WorkschoolFont: 1.3rem;
+    --WorkinfoFont: 1.1rem;
     /*Projects*/
-    --ProjectsheaderFont: 3rem;
-    --ProjectstitleFont: 1.6rem;
-    --ProjectsinfoFont: 1.3rem;
-    --ProjectsminicardFont: 1.3rem;
+    --ProjectsheaderFont: 2rem;
+    --ProjectstitleFont: 1.3rem;
+    --ProjectsinfoFont: 1.1rem;
+    --ProjectsminicardFont: 1.1rem;
     /*Video*/
-    --VideoheaderFont: 3rem;
+    --VideoheaderFont: 2rem;
     /*Blog*/
-    --BlogheaderFont: 3rem;
-    --BlogtitleFont: 1.6rem;
-    --BloginfoFont: 1.3rem;
+    --BlogheaderFont: 2rem;
+    --BlogtitleFont: 1.3rem;
+    --BloginfoFont: 1.1rem;
     /*Contact*/
     --ContactheaderFont: 2rem;
-    --ContactinfoFont: 1.1rem;
-    --ContacttitleFont: 1.3rem;
+    --ContactinfoFont: 0.8rem;
+    --ContacttitleFont: 1.1rem;
     /*Footer*/
-    --FooternameFont: 1rem;
+    --FooternameFont: 0.8rem;
   }
 
   html {
