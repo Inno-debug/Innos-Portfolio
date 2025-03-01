@@ -1368,6 +1368,8 @@ html {
 @media screen and (min-width: 1080px) {
   :root {
     --Universalwidth: 1059px;
+    --Navbarfontsize: 1.4rem;
+    --Navbargap: 4rem;
   }
 
   html {
@@ -1378,7 +1380,7 @@ html {
 
   nav {
     width: 100%;
-    font-size: 1.4rem;
+    font-size: var(--Navbarfontsize);
     position: fixed;
     z-index: 100;
   }
@@ -1406,28 +1408,16 @@ html {
     height: clamp(80px, 2vw, 110px);
   }
 
-  nav .Navwords {
-    color: var(--Textcolor);
-  }
-
-  nav .NavwordsNavname {
-    font-size: 1.4rem;
-  }
-
-  nav .Navname {
-    font-weight: bolder;
-  }
-
   .navulanch {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: var(--Navbargap);
   }
 
   nav .Navanchors {
     color: var(--Textcolor);
-    font-size: 1.4rem;
+    font-size: var(--Navbarfontsize);
     text-decoration: none;
   }
 
