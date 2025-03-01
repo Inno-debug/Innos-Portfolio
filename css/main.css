@@ -324,12 +324,18 @@ html {
   }
 
   .educationimagecontainer img {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
   .educationimagecontainer .subwaylogo {
-    width: 80px;
-    height: 70px;
+    width: 70px;
+    height: 80px;
+    position: relative;
+    left: 20px;
+  }
+
+  .subwaycontent {
+    padding-left: 30px;
   }
   /*Projects*/
 
@@ -976,12 +982,18 @@ html {
   }
 
   .educationimagecontainer img {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
   .educationimagecontainer .subwaylogo {
-    width: 80px;
-    height: 70px;
+    width: 70px;
+    height: 80px;
+    position: relative;
+    left: 20px;
+  }
+
+  .subwaycontent {
+    padding-left: 30px;
   }
   /*Projects*/
 
@@ -1631,8 +1643,14 @@ html {
     height: 100px;
   }
   .educationimagecontainer .subwaylogo {
-    width: 90px;
+    width: 70px;
     height: 80px;
+    position: relative;
+    left: 20px;
+  }
+
+  .subwaycontent {
+    padding-left: 30px;
   }
   /*Projects*/
 
