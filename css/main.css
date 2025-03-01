@@ -1548,7 +1548,7 @@ html {
   }
 
   .skills-header2 {
-    font-size: 3rem;
+    font-size: var(--SkillsheaderFont);
     color: var(--Textcolor);
   }
 
@@ -1579,7 +1579,7 @@ html {
     height: 20px;
   }
   .skills-html-p {
-    font-size: 1.3rem;
+    font-size: var(--SkillsinfoFont);
   }
   .skills-css {
     display: flex;
