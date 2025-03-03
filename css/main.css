@@ -58,6 +58,18 @@ html {
     --SocialcardinfoFont: 0.9rem;
     --SocialcardHeight: 500px;
     --SocialcardWidth: 500px;
+    --SocialcardTextheight: 1rem;
+    --SocialcardIcons: 500px;
+    --SocialcardGapIcons: 500px;
+    --SocialcardGapresume: 500px;
+    --SocialcardSizeresume: 500px;
+    --SocialcardResumewidth: 500px;
+    --SocialcardResumeheight: 500px;
+    --SocialcardPadding: 500px;
+    --SocialcardMargin: 500px;
+    --SocialcardIconsPadding: 500px;
+    --SocialcardResumePadding: 500px;
+
     /*Skills*/
     --SkillsheaderFont: 1.6rem;
     --SkillsinfoFont: 0.9rem;
