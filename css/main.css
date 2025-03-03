@@ -49,11 +49,15 @@ html {
     --Universalwidth: 529.5px;
     /*Nav Bar*/
     --NavbarFont: 1.2rem;
+    --NavbarHeight: 500px;
+    --NavbarGap: 2rem;
     /*Social Card*/
     --SocialcardheaderFont: 1.2rem;
     --SocialcardlocationFont: 0.9rem;
     --SocialcardresumeFont: 0.9rem;
     --SocialcardinfoFont: 0.9rem;
+    --SocialcardHeight: 500px;
+    --SocialcardWidth: 500px;
     /*Skills*/
     --SkillsheaderFont: 1.6rem;
     --SkillsinfoFont: 0.9rem;
