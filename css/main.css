@@ -48,12 +48,12 @@ html {
   :root {
     --Universalwidth: 529.5px;
     /*Nav Bar*/
-    --NavbarFont: 1.4rem;
+    --NavbarFont: 1.2rem;
     /*Social Card*/
-    --SocialcardheaderFont: 1.4rem;
-    --SocialcardlocationFont: 1.3rem;
-    --SocialcardresumeFont: 1rem;
-    --SocialcardinfoFont: 1.3rem;
+    --SocialcardheaderFont: 1.2rem;
+    --SocialcardlocationFont: 0.9rem;
+    --SocialcardresumeFont: 0.8rem;
+    --SocialcardinfoFont: 0.9rem;
     /*Skills*/
     --SkillsheaderFont: 1.8rem;
     --SkillsinfoFont: 1rem;
