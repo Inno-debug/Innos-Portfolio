@@ -52,34 +52,34 @@ html {
     /*Social Card*/
     --SocialcardheaderFont: 1.2rem;
     --SocialcardlocationFont: 0.9rem;
-    --SocialcardresumeFont: 0.8rem;
+    --SocialcardresumeFont: 0.9rem;
     --SocialcardinfoFont: 0.9rem;
     /*Skills*/
-    --SkillsheaderFont: 1.8rem;
-    --SkillsinfoFont: 1rem;
+    --SkillsheaderFont: 1.6rem;
+    --SkillsinfoFont: 0.9rem;
     /*Education*/
-    --EducationheaderFont: 1.8rem;
-    --EducationschoolFont: 1.2rem;
-    --EducationinfoFont: 1rem;
+    --EducationheaderFont: 1.6rem;
+    --EducationschoolFont: 1rem;
+    --EducationinfoFont: 0.9rem;
     /*Work*/
-    --WorkheaderFont: 1.8rem;
-    --WorkschoolFont: 1.2rem;
-    --WorkinfoFont: 1rem;
+    --WorkheaderFont: 1.6rem;
+    --WorkschoolFont: 1rem;
+    --WorkinfoFont: 0.9rem;
     /*Projects*/
-    --ProjectsheaderFont: 1.8rem;
-    --ProjectstitleFont: 1.2rem;
-    --ProjectsinfoFont: 1rem;
-    --ProjectsminicardFont: 1rem;
+    --ProjectsheaderFont: 1.6rem;
+    --ProjectstitleFont: 1rem;
+    --ProjectsinfoFont: 0.9rem;
+    --ProjectsminicardFont: 0.9rem;
     /*Video*/
-    --VideoheaderFont: 1.8rem;
+    --VideoheaderFont: 1.6rem;
     /*Blog*/
-    --BlogheaderFont: 1.8rem;
-    --BlogtitleFont: 1.2rem;
-    --BloginfoFont: 1rem;
+    --BlogheaderFont: 1.6rem;
+    --BlogtitleFont: 1rem;
+    --BloginfoFont: 0.9rem;
     /*Contact*/
-    --ContactheaderFont: 1.8rem;
-    --ContactinfoFont: 0.7rem;
-    --ContacttitleFont: 1rem;
+    --ContactheaderFont: 1.6rem;
+    --ContactinfoFont: 0.6rem;
+    --ContacttitleFont: 0.9rem;
     /*Footer*/
     --FooternameFont: 0.7rem;
   }
