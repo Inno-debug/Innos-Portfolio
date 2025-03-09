@@ -285,6 +285,7 @@ html {
     list-style: none;
     gap: 20px;
     margin-top: 50px;
+    flex-wrap: wrap;
   }
 
   .skills-main-ul li {
@@ -293,49 +294,21 @@ html {
     color: var(--Secondarytextcolor);
   }
 
-  .skills-html {
+  .skills-rest {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
     gap: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
-  .skills-html-img {
-    width: 20px;
-    height: 20px;
-  }
-  .skills-html-p {
-    font-size: var(--SkillsinfoFont);
-  }
-  .skills-css {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 40px;
-    gap: 8px;
-  }
-  .skills-css-img {
-    width: 20px;
-    height: 20px;
-  }
-  .skills-css-p {
-    font-size: var(--SkillsinfoFont);
-  }
-  .skills-javascript {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 145px;
-    height: 40px;
-    gap: 8px;
-  }
-  .skills-javascript-img {
+  .skills-rest-img {
     width: 22px;
     height: 22px;
   }
-  .skills-javascript-p {
+  .skills-rest-p {
     font-size: var(--SkillsinfoFont);
   }
   /*Education and Work Section*/
@@ -969,6 +942,7 @@ html {
     list-style: none;
     gap: 20px;
     margin-top: 50px;
+    flex-wrap: wrap;
   }
 
   .skills-main-ul li {
@@ -977,49 +951,21 @@ html {
     color: var(--Secondarytextcolor);
   }
 
-  .skills-html {
+  .skills-rest {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
     gap: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
-  .skills-html-img {
-    width: 20px;
-    height: 20px;
-  }
-  .skills-html-p {
-    font-size: var(--SkillsinfoFont);
-  }
-  .skills-css {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 40px;
-    gap: 8px;
-  }
-  .skills-css-img {
-    width: 20px;
-    height: 20px;
-  }
-  .skills-css-p {
-    font-size: var(--SkillsinfoFont);
-  }
-  .skills-javascript {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 40px;
-    gap: 8px;
-  }
-  .skills-javascript-img {
+  .skills-rest-img {
     width: 22px;
     height: 22px;
   }
-  .skills-javascript-p {
+  .skills-rest-p {
     font-size: var(--SkillsinfoFont);
   }
 
@@ -1663,6 +1609,7 @@ html {
     list-style: none;
     gap: 20px;
     margin-top: 50px;
+    flex-wrap: wrap;
   }
 
   .skills-main-ul li {
@@ -1671,49 +1618,21 @@ html {
     color: var(--Secondarytextcolor);
   }
 
-  .skills-html {
+  .skills-rest {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
     gap: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
-  .skills-html-img {
-    width: 20px;
-    height: 20px;
-  }
-  .skills-html-p {
-    font-size: var(--SkillsinfoFont);
-  }
-  .skills-css {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 40px;
-    gap: 8px;
-  }
-  .skills-css-img {
-    width: 20px;
-    height: 20px;
-  }
-  .skills-css-p {
-    font-size: var(--SkillsinfoFont);
-  }
-  .skills-javascript {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 40px;
-    gap: 8px;
-  }
-  .skills-javascript-img {
+  .skills-rest-img {
     width: 22px;
     height: 22px;
   }
-  .skills-javascript-p {
+  .skills-rest-p {
     font-size: var(--SkillsinfoFont);
   }
 
