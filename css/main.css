@@ -40,6 +40,7 @@
 html {
   font-family: var(--Navfont);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Smallest Size*/
