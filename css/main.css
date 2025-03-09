@@ -322,6 +322,21 @@ html {
   .skills-css-p {
     font-size: var(--SkillsinfoFont);
   }
+  .skills-javascript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    height: 40px;
+    gap: 8px;
+  }
+  .skills-javascript-img {
+    width: 22px;
+    height: 22px;
+  }
+  .skills-javascript-p {
+    font-size: var(--SkillsinfoFont);
+  }
   /*Education and Work Section*/
 
   .Educationsection {
@@ -989,6 +1004,21 @@ html {
     height: 20px;
   }
   .skills-css-p {
+    font-size: var(--SkillsinfoFont);
+  }
+  .skills-javascript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    gap: 8px;
+  }
+  .skills-javascript-img {
+    width: 22px;
+    height: 22px;
+  }
+  .skills-javascript-p {
     font-size: var(--SkillsinfoFont);
   }
 
@@ -1668,6 +1698,21 @@ html {
     height: 20px;
   }
   .skills-css-p {
+    font-size: var(--SkillsinfoFont);
+  }
+  .skills-javascript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    gap: 8px;
+  }
+  .skills-javascript-img {
+    width: 22px;
+    height: 22px;
+  }
+  .skills-javascript-p {
     font-size: var(--SkillsinfoFont);
   }
 
