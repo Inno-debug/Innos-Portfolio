@@ -1,0 +1,766 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Navfont: "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console",
+    monospace;
+}
+
+:root {
+  --Background: #ffffff;
+  --Primarycolor: #1976d2;
+  --Secondarycolor: #ced0ce;
+  --Accentcolor: #e6e8e6;
+  --Textcolor: #191919;
+  --Secondarytextcolor: #757575;
+  --Anchorfilter: opacity(40%);
+  --Socialbar0: opacity(50%);
+  --Socialcard: opacity(40%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --Background: #121212;
+    --Primarycolor: #1e88e5;
+    --Secondarycolor: #64b5f6;
+    --Accentcolor: #121212;
+    --Textcolor: #e0e0e0;
+    --Secondarytextcolor: #b0b0b0;
+    --Anchorfilter: brightness(10%);
+    --Socialbar0: opacity(20%);
+    --Socialcard: opacity(40%);
+  }
+}
+
+html {
+  font-family: var(--Navfont);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Smallest Size*/
+
+@media screen and (max-width: 780px) {
+  :root {
+    --Universalwidth: 529.5px;
+    /*Nav Bar*/
+    --NavbarFont: 1.2rem;
+    --NavbarHeight: 500px;
+    --NavbarGap: 2rem;
+    /*Social Card*/
+    --SocialcardheaderFont: 1.2rem;
+    --SocialcardlocationFont: 0.9rem;
+    --SocialcardresumeFont: 0.9rem;
+    --SocialcardinfoFont: 0.9rem;
+    --SocialcardHeight: 500px;
+    --SocialcardWidth: 500px;
+    --SocialcardTextheight: 1rem;
+    --SocialcardIcons: 500px;
+    --SocialcardGapIcons: 500px;
+    --SocialcardGapresume: 500px;
+    --SocialcardSizeresume: 500px;
+    --SocialcardResumewidth: 500px;
+    --SocialcardResumeheight: 500px;
+    --SocialcardPadding: 500px;
+    --SocialcardMargin: 500px;
+    --SocialcardIconsPadding: 500px;
+    --SocialcardResumePadding: 500px;
+
+    /*Skills*/
+    --SkillsheaderFont: 1.6rem;
+    --SkillsinfoFont: 0.9rem;
+    /*Education*/
+    --EducationheaderFont: 1.6rem;
+    --EducationschoolFont: 1rem;
+    --EducationinfoFont: 0.9rem;
+    /*Work*/
+    --WorkheaderFont: 1.6rem;
+    --WorkschoolFont: 1rem;
+    --WorkinfoFont: 0.9rem;
+    /*Projects*/
+    --ProjectsheaderFont: 1.6rem;
+    --ProjectstitleFont: 1rem;
+    --ProjectsinfoFont: 0.9rem;
+    --ProjectsminicardFont: 0.9rem;
+    /*Video*/
+    --VideoheaderFont: 1.6rem;
+    /*Blog*/
+    --BlogheaderFont: 1.6rem;
+    --BlogtitleFont: 1rem;
+    --BloginfoFont: 0.9rem;
+    /*Contact*/
+    --ContactheaderFont: 1.6rem;
+    --ContactinfoFont: 0.6rem;
+    --ContacttitleFont: 0.9rem;
+    /*Footer*/
+    --FooternameFont: 0.7rem;
+  }
+
+  html {
+    background-color: var(--Background);
+  }
+
+  /*|||| Header*/
+
+  nav {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+  /*Main Navigation Bar*/
+
+  .navulcontainer {
+    width: 100%;
+    background-color: var(--Primarycolor);
+    display: flex;
+    justify-content: center;
+  }
+
+  .navulcontainercontainer {
+    width: 100%;
+    height: clamp(80px, 2vw, 110px);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: clamp(80px, 2vw, 110px);
+  }
+
+  .navulanch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav .Navwords {
+    color: var(--Textcolor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+  }
+
+  nav .Navanchors {
+    color: var(--Textcolor);
+    font-size: var(--NavbarFont);
+    text-decoration: none;
+  }
+
+  nav .Navanchors:hover,
+  .Navanchors:focus {
+    filter: var(--Anchorfilter);
+  }
+
+  /*Recent Posts*/
+  #goals {
+    scroll-margin-top: 100px;
+  }
+  #methods {
+    scroll-margin-top: 100px;
+  }
+  #findings {
+    scroll-margin-top: 100px;
+  }
+  .SSimg {
+    margin-top: 140px;
+  }
+
+  .mainHeader {
+    color: var(--Textcolor);
+    font-size: 2rem;
+    padding-top: 140px;
+  }
+
+  .recentposts {
+    scroll-margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .recentpostscontainer {
+    width: var(--Universalwidth);
+  }
+
+  .recentpostsheader {
+    font-size: var(--BlogheaderFont);
+    margin-top: 140px;
+    color: var(--Textcolor);
+  }
+
+  .recentposts1 {
+    text-decoration: none;
+    margin-top: 70px;
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+  .recentposts1container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .recentpostsh3 {
+    font-size: var(--BlogtitleFont);
+    margin-bottom: 5px;
+    color: var(--Textcolor);
+  }
+
+  .recentpostscontent {
+    font-size: var(--BloginfoFont);
+    color: var(--Textcolor);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .miniheader {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--Textcolor);
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .ulcontent {
+    color: var(--Secondarytextcolor);
+    padding-left: 15px;
+  }
+
+  /*Footer*/
+
+  .footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .footercontainer {
+    width: var(--Universalwidth);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footercontentcontainer {
+    line-height: 1.5rem;
+    font-size: var(--FooternameFont);
+  }
+
+  .footercontentcontainer h4 {
+    color: var(--Secondarytextcolor);
+  }
+
+  .footercontentcontainer h4 a {
+    text-decoration: none;
+    color: var(--Textcolor);
+  }
+
+  .footericons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .footericons img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .attribution a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+
+  .footericons a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Medium Size*/
+
+@media screen and (min-width: 780px) {
+  :root {
+    --Universalwidth: 529.5px;
+    /*Nav Bar*/
+    --NavbarFont: 1.4rem;
+    /*Social Card*/
+    --SocialcardheaderFont: 1.5rem;
+    --SocialcardlocationFont: 1.4rem;
+    --SocialcardresumeFont: 1.1rem;
+    --SocialcardinfoFont: 1.4rem;
+    /*Skills*/
+    --SkillsheaderFont: 2rem;
+    --SkillsinfoFont: 1.1rem;
+    /*Education*/
+    --EducationheaderFont: 2rem;
+    --EducationschoolFont: 1.3rem;
+    --EducationinfoFont: 1.1rem;
+    /*Work*/
+    --WorkheaderFont: 2rem;
+    --WorkschoolFont: 1.3rem;
+    --WorkinfoFont: 1.1rem;
+    /*Projects*/
+    --ProjectsheaderFont: 2rem;
+    --ProjectstitleFont: 1.3rem;
+    --ProjectsinfoFont: 1.1rem;
+    --ProjectsminicardFont: 1.1rem;
+    /*Video*/
+    --VideoheaderFont: 2rem;
+    /*Blog*/
+    --BlogheaderFont: 2rem;
+    --BlogtitleFont: 1.3rem;
+    --BloginfoFont: 1.1rem;
+    /*Contact*/
+    --ContactheaderFont: 2rem;
+    --ContactinfoFont: 0.8rem;
+    --ContacttitleFont: 1.1rem;
+    /*Footer*/
+    --FooternameFont: 0.8rem;
+  }
+
+  html {
+    background-color: var(--Background);
+  }
+
+  /*|||| Header*/
+
+  nav {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+  /*Main Navigation Bar*/
+
+  .navulcontainer {
+    width: 100%;
+    background-color: var(--Primarycolor);
+    display: flex;
+    justify-content: center;
+  }
+
+  .navulcontainercontainer {
+    width: 100%;
+    height: clamp(80px, 2vw, 110px);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    grid-template-rows: 100%;
+    list-style: none;
+    height: clamp(80px, 2vw, 110px);
+  }
+
+  .navulanch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav .Navwords {
+    color: var(--Textcolor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav .Navanchors {
+    color: var(--Textcolor);
+    font-size: var(--NavbarFont);
+    text-decoration: none;
+  }
+
+  nav .Navanchors:hover,
+  .Navanchors:focus {
+    filter: var(--Anchorfilter);
+  }
+
+  /*Recent Posts*/
+  #goals {
+    scroll-margin-top: 100px;
+  }
+  #methods {
+    scroll-margin-top: 100px;
+  }
+  #findings {
+    scroll-margin-top: 100px;
+  }
+  .SSimg {
+    margin-top: 140px;
+  }
+  .mainHeader {
+    color: var(--Textcolor);
+    font-size: 2.5rem;
+    padding-top: 140px;
+  }
+  .recentposts {
+    scroll-margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .recentpostscontainer {
+    width: var(--Universalwidth);
+  }
+
+  .recentpostsheader {
+    font-size: var(--BlogheaderFont);
+    margin-top: 140px;
+    color: var(--Textcolor);
+  }
+
+  .recentposts1 {
+    text-decoration: none;
+    margin-top: 70px;
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+  .recentposts1container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .recentpostsh3 {
+    font-size: var(--BlogtitleFont);
+    margin-bottom: 5px;
+    color: var(--Textcolor);
+  }
+
+  .recentpostscontent {
+    font-size: var(--BloginfoFont);
+    color: var(--Textcolor);
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 36px;
+  }
+
+  .miniheader {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--Textcolor);
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .ulcontent {
+    color: var(--Secondarytextcolor);
+    padding-left: 15px;
+  }
+  /*Footer*/
+
+  .footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .footercontainer {
+    width: var(--Universalwidth);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footercontentcontainer {
+    line-height: 1.5rem;
+    font-size: var(--FooternameFont);
+  }
+
+  .footercontentcontainer h4 {
+    color: var(--Secondarytextcolor);
+  }
+
+  .footercontentcontainer h4 a {
+    text-decoration: none;
+    color: var(--Textcolor);
+  }
+
+  .attribution {
+    display: flex;
+    list-style: none;
+    color: var(--Secondarytextcolor);
+    font-size: 0.8rem;
+  }
+
+  .attribution li a {
+    text-decoration: none;
+    color: var(--Secondarytextcolor);
+  }
+
+  .footericons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .footericons img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .attribution a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+
+  .footericons a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+}
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Biggest Size*/
+
+@media screen and (min-width: 1080px) {
+  :root {
+    --Universalwidth: 1059px;
+    /*Nav Bar*/
+    --NavbarFont: 1.5rem;
+    /*Social Card*/
+    --SocialcardheaderFont: 2rem;
+    --SocialcardlocationFont: 1.6rem;
+    --SocialcardresumeFont: 1.3rem;
+    --SocialcardinfoFont: 1.6rem;
+    /*Skills*/
+    --SkillsheaderFont: 3rem;
+    --SkillsinfoFont: 1.3rem;
+    /*Education*/
+    --EducationheaderFont: 3rem;
+    --EducationschoolFont: 1.6rem;
+    --EducationinfoFont: 1.3rem;
+    /*Work*/
+    --WorkheaderFont: 3rem;
+    --WorkschoolFont: 1.6rem;
+    --WorkinfoFont: 1.3rem;
+    /*Projects*/
+    --ProjectsheaderFont: 3rem;
+    --ProjectstitleFont: 1.6rem;
+    --ProjectsinfoFont: 1.3rem;
+    --ProjectsminicardFont: 1.3rem;
+    /*Video*/
+    --VideoheaderFont: 3rem;
+    /*Blog*/
+    --BlogheaderFont: 3rem;
+    --BlogtitleFont: 1.6rem;
+    --BloginfoFont: 1.3rem;
+    /*Contact*/
+    --ContactheaderFont: 2rem;
+    --ContactinfoFont: 1.1rem;
+    --ContacttitleFont: 1.3rem;
+    /*Footer*/
+    --FooternameFont: 1rem;
+  }
+
+  html {
+    background-color: var(--Background);
+  }
+
+  /*|||| Header*/
+
+  nav {
+    width: 100%;
+    font-size: var(--NavbarFont);
+    position: fixed;
+    z-index: 100;
+  }
+
+  /*Main Navigation Bar*/
+
+  .navulcontainer {
+    width: 100%;
+    background-color: var(--Primarycolor);
+    display: flex;
+    justify-content: center;
+    color: var(--Textcolor);
+  }
+
+  .navulcontainercontainer {
+    width: 100%;
+    height: clamp(80px, 2vw, 110px);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: clamp(80px, 2vw, 110px);
+  }
+
+  .navulanch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  nav .Navanchors {
+    color: var(--Textcolor);
+    font-size: var(--NavbarFont);
+    text-decoration: none;
+  }
+
+  nav .Navanchors:hover,
+  .Navanchors:focus {
+    filter: var(--Anchorfilter);
+  }
+
+  /*Recent Posts*/
+  #goals {
+    scroll-margin-top: 100px;
+  }
+  #methods {
+    scroll-margin-top: 100px;
+  }
+  #findings {
+    scroll-margin-top: 100px;
+  }
+  .SSimg {
+    margin-top: 140px;
+  }
+  .mainHeader {
+    color: var(--Textcolor);
+    font-size: 3.5rem;
+    padding-top: 140px;
+  }
+  .recentposts {
+    display: flex;
+    justify-content: center;
+    scroll-margin-top: 100px;
+  }
+
+  .recentpostscontainer {
+    width: var(--Universalwidth);
+  }
+
+  .recentpostsheader {
+    font-size: var(--BlogheaderFont);
+    margin-top: 140px;
+    color: var(--Textcolor);
+  }
+
+  .recentposts1 {
+    text-decoration: none;
+    margin-top: 70px;
+    border: 2px solid var(--Secondarycolor);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+  .recentposts1container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .recentpostsh3 {
+    font-size: var(--BlogtitleFont);
+    margin-bottom: 5px;
+    color: var(--Textcolor);
+  }
+
+  .recentpostscontent {
+    font-size: var(--BloginfoFont);
+    color: var(--Textcolor);
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 42px;
+  }
+
+  .miniheader {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--Textcolor);
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .ulcontent {
+    color: var(--Secondarytextcolor);
+    padding-left: 15px;
+  }
+
+  /*Footer*/
+
+  .footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .footercontainer {
+    width: var(--Universalwidth);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footercontentcontainer {
+    line-height: 1.5rem;
+    font-size: var(--FooternameFont);
+  }
+
+  .footercontentcontainer h4 {
+    color: var(--Secondarytextcolor);
+  }
+
+  .footercontentcontainer h4 a {
+    text-decoration: none;
+    color: var(--Textcolor);
+  }
+
+  .attribution {
+    display: flex;
+    list-style: none;
+    color: var(--Secondarytextcolor);
+    font-size: var(--FooternameFont);
+  }
+
+  .attribution li a {
+    text-decoration: none;
+    color: var(--Secondarytextcolor);
+  }
+
+  .footericons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .footericons img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .attribution a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+
+  .footericons a:hover,
+  a:focus {
+    filter: var(--Socialcard);
+  }
+}
