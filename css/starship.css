@@ -160,6 +160,10 @@ html {
   }
 
   /*Recent Posts*/
+  .SSimg {
+    width: 300px;
+    height: 300px;
+  }
   #goals {
     scroll-margin-top: 100px;
   }
@@ -175,18 +179,20 @@ html {
 
   .mainHeader {
     color: var(--Textcolor);
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-top: 140px;
+    display: flex;
   }
 
   .recentposts {
     scroll-margin-top: 100px;
-    display: flex;
-    justify-content: center;
   }
 
   .recentpostscontainer {
     width: var(--Universalwidth);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
   .recentpostsheader {
@@ -203,11 +209,11 @@ html {
     display: flex;
     justify-content: space-between;
     min-height: 150px;
+    width: 300px;
   }
 
   .recentposts1container {
     padding: 20px;
-    width: 100%;
   }
 
   .recentpostsh3 {
@@ -732,6 +738,7 @@ html {
 
   .attribution {
     display: flex;
+    justify-content: center;
     list-style: none;
     color: var(--Secondarytextcolor);
     font-size: var(--FooternameFont);
@@ -740,6 +747,8 @@ html {
   .attribution li a {
     text-decoration: none;
     color: var(--Secondarytextcolor);
+    display: flex;
+    justify-content: center;
   }
 
   .footericons {
