@@ -179,7 +179,12 @@ html {
   }
 
   /*Recent Posts*/
+  .SSimg {
+    width: 300px;
+    height: 300px;
 
+    display: flex;
+  }
   #goals {
     scroll-margin-top: 100px;
   }
@@ -207,6 +212,10 @@ html {
 
   .recentpostscontainer {
     width: var(--Universalwidth);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .recentpostsheader {
@@ -223,11 +232,12 @@ html {
     display: flex;
     justify-content: space-between;
     min-height: 150px;
+    width: 300px;
   }
 
   .recentposts1container {
     padding: 20px;
-    width: 100%;
+
     line-height: 30px;
   }
 
@@ -469,12 +479,12 @@ html {
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
-    min-height: 150px;
+    min-height: 500px;
   }
 
   .recentposts1container {
     padding: 36px;
-    width: 100%;
+
     line-height: 36px;
   }
 
