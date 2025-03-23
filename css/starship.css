@@ -772,4 +772,8 @@ html {
   a:focus {
     filter: var(--Socialcard);
   }
+
+  .scooter {
+    border: 10px;
+  }
 }
