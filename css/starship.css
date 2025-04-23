@@ -21,6 +21,10 @@
   --Socialcard: opacity(40%);
 }
 
+.storyboard:hover {
+  color: var(--Secondarytextcolor);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --Background: #121212;
