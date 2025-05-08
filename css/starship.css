@@ -296,6 +296,39 @@ html {
   a:focus {
     filter: var(--Socialcard);
   }
+
+  /*Video Section*/
+
+  .Video {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .minijamvideoheader {
+    font-size: var(--VideoheaderFont);
+    color: var(--Textcolor);
+  }
+
+  .videocontainercontainer {
+    border: 3px solid var(--Secondarycolor);
+    border-radius: 12px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+
+    width: clamp(310px, 100vw, 510px);
+    height: 308px;
+  }
+
+  .minijamvideo {
+    padding-left: 2px;
+    width: clamp(250px, 100vw, 500px);
+    height: 296px;
+    border-radius: 12px;
+  }
 }
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Medium Size*/
@@ -536,6 +569,40 @@ html {
   .footericons a:hover,
   a:focus {
     filter: var(--Socialcard);
+  }
+
+  /*Video Section*/
+
+  .Video {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .minijamvideoheader {
+    text-align: left;
+    font-size: var(--VideoheaderFont);
+    color: var(--Textcolor);
+  }
+
+  .videocontainercontainer {
+    border: 3px solid var(--Secondarycolor);
+    border-radius: 12px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+
+    width: clamp(310px, 100vw, 510px);
+    height: 308px;
+  }
+
+  .minijamvideo {
+    padding-left: 2px;
+    width: clamp(250px, 100vw, 500px);
+    height: 296px;
+    border-radius: 12px;
   }
 }
 
@@ -779,5 +846,39 @@ html {
 
   .scooter {
     border: 10px;
+  }
+
+  /*Video Section*/
+
+  .Video {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .minijamvideoheader {
+    width: 1050px;
+    font-size: var(--VideoheaderFont);
+    color: var(--Textcolor);
+  }
+
+  .videocontainercontainer {
+    border: 3px solid var(--Secondarycolor);
+    border-radius: 12px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 200px;
+    width: clamp(310px, 100vw, 510px);
+    height: 308px;
+  }
+
+  .minijamvideo {
+    padding-left: 2px;
+    width: clamp(250px, 100vw, 500px);
+    height: 296px;
+    border-radius: 12px;
   }
 }
